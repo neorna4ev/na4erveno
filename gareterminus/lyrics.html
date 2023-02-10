@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-02-10 Fri 22:31 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gare Terminus (songs)</title>
+<meta name="author" content="Margarita Omar and Neor Nachev" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Gare Terminus (songs)</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org83e0e61">1. Hookers for Jesus</a></li>
+<li><a href="#orgbe3783f">2. Progress (The Hymn)</a></li>
+<li><a href="#org7c6e788">3. Russian Roulette</a></li>
+<li><a href="#orga15aa1c">4. The Boxer</a></li>
+<li><a href="#org37f26cc">5. The Fall</a></li>
+<li><a href="#orgd763d73">6. The Hopeless Ones</a></li>
+<li><a href="#org30bd121">7. Wisdom of the Forest</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org83e0e61" class="outline-2">
+<h2 id="org83e0e61"><span class="section-number-2">1.</span> Hookers for Jesus</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+C G &#x2026;]<br />
+</p>
+
+<p>
+(t:85 r:4/4) (slow)<br />
+</p>
+
+<p>
+ we   are Hookers for  Jesus<br />
+ we sell   our  pride<br />
+ and no man   we are ser  ving<br />
+wants to  be   at our  place<br />
+</p>
+
+<p>
+D]   x2<br />
+</p>
+
+<p>
+ we are trapped   by the sa  viour<br />
+ its   sacred  rites<br />
+and the  Fa   mily  holds us<br />
+just no  way   to re  bel<br />
+</p>
+
+<p>
+D D C G] x2<br />
+</p>
+
+<p>
+t:135 r:4 (fast)  D&#x2026;<br />
+</p>
+
+<pre class="example">
+Impro
+ v  |||x|x   v |||x|x
+    ||||x|     ||||x|
+    ||||||     |||||1
+    ||||||     |||||2
+</pre>
+
+<p>
+let concealment   go  through<br />
+new   sacred  rites<br />
+and no men   we are  serving<br />
+wants to be   at our  place<br />
+</p>
+
+<p>
+Flirty fishing  flirty  flirty  fishing<br />
+Hookers   for  Jesus<br />
+Flirty fishing  flirty  flirty  fishing<br />
+Hookers   for  Jesus<br />
+</p>
+
+<p>
+Adam and Eve  your god  is a  pimp (x4)<br />
+</p>
+
+<p>
+(spoken)<br />
+</p>
+
+<p>
+(wshisper)<br />
+Flirty fishing fishy flirting<br />
+no one ever got the warning<br />
+Behind the mask of pious reason<br />
+The Trinity turns into threesome<br />
+</p>
+
+<p>
+(low)<br />
+by virtue of the ten commandments<br />
+your soul is raped and then abandoned<br />
+(high)<br />
+the tender flesh is penetrated<br />
+(scream)<br />
+with bloody cross you're initiated<br />
+</p>
+
+<p>
+(back to main theme)<br />
+</p>
+
+<p>
+(t:85 r:4/4) (slow)<br />
+</p>
+
+<p>
+ we   are Hookers for  Jesus<br />
+ we sell   our  pride<br />
+and the  Fa   mily  holds us<br />
+just no  way   to re  bel<br />
+</p>
+
+<p>
+20160807<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbe3783f" class="outline-2">
+<h2 id="orgbe3783f"><span class="section-number-2">2.</span> Progress (The Hymn)</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Em Em G A<br />
+</p>
+
+<p>
+(t:110 r:2/4)<br />
+</p>
+
+<p>
+1  We are all numbers A] in a sta  tistic A]<br />
+With sta  tistics is easy A] to measure ex  istence A]<br />
+ That one's successfull, A] the other's a  failure A]<br />
+ You are the star A] while your score is in  favour A]<br />
+</p>
+
+<p>
+This is progress,  no  less A] G A Em]<br />
+</p>
+
+<p>
+2  A senseless game A] by the ones in con  trol A]<br />
+ Brains drain A] where  money flows A]<br />
+ For job security A] and a  pension A]<br />
+ wars are started A] with  good intentions A]<br />
+</p>
+
+<p>
+3  But there's a gray line between the  "good" and the  "bad"<br />
+ a statistical error that one  always ne  glects<br />
+the out  liers, the marginals, the  homeless, the  freaks<br />
+ the hopeless ones for whom  no one  weeps<br />
+</p>
+
+<p>
+4  The silent majority that  never for  gets<br />
+ Forever ignored, but  is not dead  yet<br />
+ Now we have the tools and we  have the i deals<br />
+It's  time to wake up and  make our stand  real<br />
+</p>
+
+<p>
+This is progress,  no  less A] x2<br />
+</p>
+
+<p>
+5  Half of the net A] world's  worth A]<br />
+ is owned by 1% A] of the world's  dirt A]<br />
+ As superpowers A] colonize new  markets A]<br />
+ humans are trafficked A] and children are  starving A]<br />
+</p>
+
+<p>
+This is progress,  no  less A] G A Em]<br />
+</p>
+
+<p>
+6  The West invented A] its own  monsters A]<br />
+Now  we pay in blood A] for their  slaughter A]<br />
+ Keep them divided A] and keep them in  fear A]<br />
+ the Orwellian future A] is already  here A]<br />
+</p>
+
+<p>
+7  Transparency for the powerful, accounta  bility for the  rich<br />
+ Protection and solidarity for the  weak and the  sick<br />
+ Less politics, dEmagogy,  "faith" and re  ligion<br />
+ Education for all &#x2013;  learning is  freedom<br />
+</p>
+
+<p>
+8  Distributed knowledge can  not be des  troyed<br />
+ Anonymous speech can  not be con  trolled<br />
+ Our stronghold &#x2013; the elec  tronic fron  tier<br />
+ It's time to wake up and  make our stand  real<br />
+</p>
+
+<p>
+This is progress,  no  less A] x4<br />
+</p>
+
+<p>
+20180305<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org7c6e788" class="outline-2">
+<h2 id="org7c6e788"><span class="section-number-2">3.</span> Russian Roulette</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+(t:135 r:2/4)<br />
+</p>
+
+<p>
+Am G F G<br />
+</p>
+
+<p>
+ please, give me someone elses' life<br />
+i  want to rest in peace for a  while<br />
+ seeing through the eyes of a child<br />
+has  left me too  old before my own  time<br />
+</p>
+
+<p>
+ please, give me someone else's thoughts<br />
+ mine are too worn out to  wear<br />
+ searching for the root of the cause<br />
+has  cut my own  causes to the  root<br />
+</p>
+
+<p>
+"There's  always a  way to continue a  game"<br />
+"Be  patient and  strong" advice the  Wise<br />
+ Maybe the  next will be your lucky  bet<br />
+just  spin the  wheel of the Russian rou  lette<br />
+</p>
+
+<p>
+1 verse]<br />
+    AAAA GGGG GbGbGb-G-Gb EEEE] riff E<br />
+</p>
+
+<p>
+ please, let me share someone's excitemnet<br />
+ mine is as stale as a  ghosts'<br />
+ a bleeding heart brings hollow compassion<br />
+and the  three cheers  from a nonchalant  crowd<br />
+</p>
+
+<p>
+ please, stop the earth I want to get off<br />
+ I never signed for this  ride<br />
+ my limbs are rusty and my soul is weak<br />
+and my  knees won't  hold the weight of these  thoughts<br />
+</p>
+
+<p>
+"There's  always a  way to continue a  game"<br />
+"Be  patient and  strong" advice the  Wise<br />
+ Maybe the  next will be your lucky  bet<br />
+just  spin the  wheel of the Russian rou  lette<br />
+(repeat)<br />
+</p>
+
+<p>
+1 verse]<br />
+    AAAA GGGG GbGbGb-G-Gb EEEE] riff E<br />
+</p>
+
+<p>
+20170816<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga15aa1c" class="outline-2">
+<h2 id="orga15aa1c"><span class="section-number-2">4.</span> The Boxer</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+(t:150 r:3/4)<br />
+</p>
+
+<p>
+ He was a boxer  the last of his  kind<br />
+ Alone he only  fought for his  name<br />
+And he  knew that de  feat is only  making you  strong<br />
+ And that victory can  never be  bought<br />
+</p>
+
+<p>
+ He had no coach, he  belonged to no  club<br />
+ He learned all he  knew from the  street<br />
+That it  takes more than  knuckles to  win a  fight<br />
+ and that no fight is  larger than  life<br />
+</p>
+
+<p>
+ He won medals and had no  loss to his  name<br />
+ Yet he knew that it's  all just a  game<br />
+He  beat his op  ponents yet acc  epted no  praise<br />
+ You only win when you  conquer your  self<br />
+</p>
+
+<p>
+ Then they came with their  black suits and  said:<br />
+ "From today, buddy, you are  fighting for  us!"<br />
+And their  lawyers sat  down with their  papers and  pens<br />
+ And he knew that the  game has new  rules<br />
+</p>
+
+<p>
+Am G Am x2<br />
+</p>
+
+<p>
+Behind the door he heard the  cries of his  son<br />
+His mother held him  tight in her  arms:<br />
+"Don't cry, my  child, daddy  soon'll be with  us"<br />
+Then he turned to the  gloom in the  room<br />
+</p>
+
+<p>
+"Gentlemen, won't you  give me a  day!<br />
+I need to con  sider this, if I  may."<br />
+"Take your time,  champion, just  don't take too  long:<br />
+for tomorrow we'll be  back at your  door"<br />
+</p>
+
+<p>
+ And in the dark their  faceless faces  smiled<br />
+ their hollow  faceless face  smiles<br />
+And their  shiny black  suits crawled back  one by  one<br />
+ in the backs of their  shiny black  cars<br />
+</p>
+
+<p>
+Am G Am x2<br />
+F G Em Am<br />
+Am G Am<br />
+</p>
+
+<p>
+The boxer then took his  battered old  gloves,<br />
+and put them in his  son's sleeping  cot<br />
+Dream, my boy,  dream and re  member the  time<br />
+When hearts of great men no  money could  buy<br />
+</p>
+
+<p>
+ He kissed the forehead of his  weary  wife<br />
+ He straightened  the blankets and  put off the light<br />
+Then  quietly  closed the back  door  behind<br />
+ And disappeared as a  ghost in the  night<br />
+</p>
+
+<p>
+ When they came again with  their lawyers and  suits<br />
+ They banged at the  door and  they spitted insults<br />
+they  cursed and they  quarreled and they  screamed and they  cried<br />
+ for the heart of great man  no money could  buy<br />
+</p>
+
+<p>
+Am G Am x2<br />
+F G Em Am<br />
+Am G Am x2<br />
+</p>
+
+<p>
+ No one has seen  the boxer since  then<br />
+ He was the last of his  kind among  men<br />
+He  knew that more than  knuckles takes to  win a  fight<br />
+ And that no fight is ever  larger than  life<br />
+</p>
+
+<p>
+If some day as you  stroll down the  street<br />
+An old man in  rags you  happen to meet<br />
+be kind to him,  bow down, and  give him a  hand  x2<br />
+He might be the boxer &#x2013;  a great one among  men     x2<br />
+</p>
+
+<p>
+Am G Am<br />
+Am G Am Am Am END times 1-2-3]<br />
+</p>
+
+<p>
+20171017<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org37f26cc" class="outline-2">
+<h2 id="org37f26cc"><span class="section-number-2">5.</span> The Fall</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+(t:125 r:4/4)<br />
+</p>
+
+<p>
+(arpeggio)<br />
+ Distorted face - a razor  blade<br />
+ A mirror image - fades  away \<br />
+ The pain too strong - to bear  alone \<br />
+ Succumbing to the  final  blow<br />
+</p>
+
+<p>
+(full)<br />
+ Our hopes and dreams - are left  behind<br />
+ a fragile shelter - for the  blind /<br />
+ No choices left - for those who  see /<br />
+ Eternal void will  set them  free<br />
+</p>
+
+<p>
+(arpeggio)<br />
+(whistle) 1/2<br />
+</p>
+
+<p>
+(arpeggio)<br />
+ Lust, greed, lies - and dis  trust<br />
+ What did the heroes - struggled  for? \<br />
+ Burned down - the pan  theon \<br />
+ The body cruci  fied the  soul<br />
+</p>
+
+<p>
+(full)<br />
+ Now it's too late - to stop the  fall<br />
+ The monster breeds - inside us  all /<br />
+ a blazing trail - into the  sun /<br />
+ only death will for  give our  sins (x2)<br />
+G Am]<br />
+</p>
+
+<p>
+20151021<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd763d73" class="outline-2">
+<h2 id="orgd763d73"><span class="section-number-2">6.</span> The Hopeless Ones</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+(t:160 r:4/4)<br />
+</p>
+
+<p>
+Bm G A Bm = Am F G Am = Gm E F Gm = Em C D Em<br />
+</p>
+
+<p>
+(arpeggio)<br />
+ Days go by and  then you die<br />
+ what is left are  tears and debt<br />
+ to all the ones  who tried to help<br />
+ the helpless one,  the hopeless son<br />
+</p>
+
+<p>
+(full)<br />
+ We are marching  on and on<br />
+ to brighter dawn  so we're told<br />
+ as night draws near  it dawns on us<br />
+ our days are done  what's left is dust<br />
+</p>
+
+<p>
+Chorus:<br />
+</p>
+
+<p>
+(full)<br />
+ Under a  flag of  success<br />
+ Are buried  no less<br />
+ Than one million<br />
+ Broken  hopes<br />
+</p>
+
+<p>
+ When  you're at the  top<br />
+Re  member to  stop<br />
+ And pay  your dues<br />
+To the  lost<br />
+</p>
+
+<p>
+(arpeggio)<br />
+(mouth whistle)<br />
+</p>
+
+<p>
+(arpeggio)<br />
+ For every one  fallen down<br />
+ thousand more  will follow on<br />
+ there's always more  to carry on<br />
+ to brighter dawn  or so they're told<br />
+</p>
+
+<p>
+(full)<br />
+ To all braves  that follow on<br />
+ heed the cries  of fallen ones<br />
+ in their shoes  you are marching on<br />
+ the helpless ones,  the hopeless sons<br />
+</p>
+
+<p>
+20160804<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org30bd121" class="outline-2">
+<h2 id="org30bd121"><span class="section-number-2">7.</span> Wisdom of the Forest</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Autumn leaves are falling all around<br />
+quietly like corpses kiss the ground<br />
+The beauty in your eyes is death<br />
+When two souls kiss - begins the end<br />
+</p>
+
+<p>
+Roots of trees stick out like veins<br />
+Morning dew caresses them like tears<br />
+The forest breathes through our weakened lungs<br />
+The branches touch - like our tongues<br />
+</p>
+
+<p>
+(spoken word)<br />
+</p>
+
+<p>
+"True philosophers make dying their profession and  to them<br />
+of all men death is least alarming.  They are thoroughly dissatisfied<br />
+with the body, and long to have their souls independent of it<br />
+When this happens are not] frightened, are not] distressed.<br />
+are] glad to set out for the place where there is a prospect<br />
+of attaining the object of their lifelong desire which is wisdom<br />
+Surely there are many who have chosen of their own free will to follow<br />
+dead lovers and wives and sons to the next world, in the hope of seeing<br />
+and meeting there the persons whom they loved. If this is so,<br />
+will a true lover of wisdom  be grieved at dying? Will he not be glad<br />
+to make that journey?" Socrates, Plato Dialogues: Phaedo]<br />
+</p>
+
+<p>
+Will he not be glad to make that journey?<br />
+Will he not be glad to make that journey?<br />
+</p>
+
+<p>
+We're million years old like the earth<br />
+Born of her, to her we return<br />
+The beauty in your eyes is death<br />
+When two souls kiss - begins the end<br />
+</p>
+
+<p>
+Dead leaves are covering the ground<br />
+like waterfalls of blood they flow around<br />
+I asked the mushroom why do leaves die<br />
+the forest is committing suicide<br />
+</p>
+
+<p>
+(Whisper: Suicide for life, suicide, suicide&#x2026;)<br />
+</p>
+
+<pre class="example">
+
+
+    o   xx
+vii |x||||
+    ||||||
+    ||xx||
+</pre>
+
+<p>
+20151207<br />
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Margarita Omar and Neor Nachev</p>
+<p class="date">Created: 2023-02-10 Fri 22:31</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

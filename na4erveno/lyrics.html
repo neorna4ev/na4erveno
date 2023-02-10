@@ -1,0 +1,5124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-02-10 Fri 22:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>На Червено (песни)</title>
+<meta name="author" content="Неор Начев" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">На Червено (песни)</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org21f0edd">1. Балада за Сизиф</a></li>
+<li><a href="#org4579d93">2. Балада за приказния вълшебник Гугудей</a></li>
+<li><a href="#org0d352b3">3. Благодарствена</a></li>
+<li><a href="#org84e9769">4. Бог като моя</a></li>
+<li><a href="#org92e6cb4">5. Болест</a></li>
+<li><a href="#org109ce15">6. България като хероин</a></li>
+<li><a href="#orgaaacbbd">7. В черно</a></li>
+<li><a href="#orga9a390d">8. В любовта не вярвам</a></li>
+<li><a href="#org83437a1">9. Въображение</a></li>
+<li><a href="#orgb308c94">10. Гара последна</a></li>
+<li><a href="#orgae45bd6">11. Геометрия на безмислието</a></li>
+<li><a href="#org5e054a7">12. Героична</a></li>
+<li><a href="#org283dd7b">13. Гняв Народен</a></li>
+<li><a href="#org84f1395">14. Да сънуваш съня си</a></li>
+<li><a href="#org23bf24d">15. Две имена</a></li>
+<li><a href="#orgb46e4ce">16. Други няма</a></li>
+<li><a href="#orge685ca2">17. Една бира време</a></li>
+<li><a href="#org09b5f50">18. Емилия, сбогом</a></li>
+<li><a href="#org1223745">19. Есенен следобед</a></li>
+<li><a href="#orgbbaf850">20. Ези-тура блус</a></li>
+<li><a href="#org62bbb7a">21. Езичница блус</a></li>
+<li><a href="#orgb6a9a21">22. Зад 10-ти блок</a></li>
+<li><a href="#orgf364512">23. За онези истини</a></li>
+<li><a href="#orgcb20c42">24. За отчаяние е късно</a></li>
+<li><a href="#orgc6f37d3">25. Игра</a></li>
+<li><a href="#org3108a77">26. Лозунг "Промяна"</a></li>
+<li><a href="#orge63a6fd">27. Льовен, здравей</a></li>
+<li><a href="#orgfaa86fb">28. Метедрин</a></li>
+<li><a href="#org52faeb3">29. Мечта</a></li>
+<li><a href="#orgadb6569">30. Моя кристална сълза</a></li>
+<li><a href="#orgce7fe12">31. Моята смърт</a></li>
+<li><a href="#orgdb13813">32. Моята София</a></li>
+<li><a href="#org1fa02a6">33. На всички изгубени души - с любов</a></li>
+<li><a href="#org8e41840">34. На баща ми</a></li>
+<li><a href="#org4c31b8a">35. На Петър</a></li>
+<li><a href="#orge90f0f8">36. Най-тъжната песен</a></li>
+<li><a href="#org63abef7">37. Не будете призраците когато спят</a></li>
+<li><a href="#orga91a6d5">38. Не се връщай</a></li>
+<li><a href="#orgadf4c83">39. Непреходно за Прехода</a></li>
+<li><a href="#org99b437e">40. Нищо лично</a></li>
+<li><a href="#org7acce64">41. Обичах те, мила (преди да свърша)</a></li>
+<li><a href="#orgb285cad">42. От кал</a></li>
+<li><a href="#org1fbfd39">43. Патриотична</a></li>
+<li><a href="#org2a3d8cc">44. Парцалени кукли</a></li>
+<li><a href="#orgc642049">45. Песен за един добър непознат</a></li>
+<li><a href="#orgf949da9">46. Песен за китарата</a></li>
+<li><a href="#orgbca16fd">47. Песен за малиновата долина</a></li>
+<li><a href="#org236681f">48. Песен за София</a></li>
+<li><a href="#org33f37dc">49. По мъжки</a></li>
+<li><a href="#org6742ad3">50. Последен Завет</a></li>
+<li><a href="#org8b4306d">51. Почти</a></li>
+<li><a href="#org3baba7a">52. Празни мисли</a></li>
+<li><a href="#orga3e30c7">53. Приспивна песен (До поискване)</a></li>
+<li><a href="#org6852107">54. Прошка</a></li>
+<li><a href="#org8467912">55. П.С. Ще се видим отвъд</a></li>
+<li><a href="#orgb4263b5">56. Рапсодия в бяло</a></li>
+<li><a href="#org7a03573">57. С мълчание до края</a></li>
+<li><a href="#org2e3ff3e">58. Само врагове</a></li>
+<li><a href="#org8b6d130">59. Самотата ме ражда</a></li>
+<li><a href="#org16619d4">60. Семейство "Феерия"</a></li>
+<li><a href="#orgd78ab6f">61. Софийски герой</a></li>
+<li><a href="#org49942b0">62. Спасение</a></li>
+<li><a href="#org0f8daf2">63. Спомен</a></li>
+<li><a href="#orgbea7aa5">64. Страх от високо</a></li>
+<li><a href="#org8ff89af">65. Студено време</a></li>
+<li><a href="#orge95adc0">66. Съдба</a></li>
+<li><a href="#org811b347">67. Съревнование</a></li>
+<li><a href="#org9a85528">68. Сърце на града</a></li>
+<li><a href="#orgb6d2dc9">69. Tам ли си още</a></li>
+<li><a href="#org23431c5">70. Ти жумиш</a></li>
+<li><a href="#orgb2b5890">71. Трета класа</a></li>
+<li><a href="#org733af88">72. Тъмната вълна</a></li>
+<li><a href="#orgf81e75f">73. Хермина</a></li>
+<li><a href="#org1e7ec1a">74. Хероин</a></li>
+<li><a href="#orgb972851">75. Целуни ме сега</a></li>
+<li><a href="#org7482ccc">76. Черен въглен</a></li>
+<li><a href="#orgeedd126">77. Черна стая с четири стени</a></li>
+<li><a href="#org2eee9c5">78. Черен стих</a></li>
+<li><a href="#org84cc12f">79. Черна детелина</a></li>
+<li><a href="#orga37dbef">80. Dark Mistress</a></li>
+<li><a href="#orga578d7c">81. Metaplatonic</a></li>
+<li><a href="#org22322b2">82. No Use</a></li>
+<li><a href="#orgc60ac17">83. Standing on the Edge</a></li>
+<li><a href="#org472f397">84. The Only Way</a></li>
+<li><a href="#org2fa986b">85. Just Another Day</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org21f0edd" class="outline-2">
+<h2 id="org21f0edd"><span class="section-number-2">1.</span> Балада за Сизиф</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+(t:115 r:4/4)<br />
+</p>
+
+<p>
+(разложени)<br />
+ И всеки ден от  начало за  почва<br />
+ избутваш камъка, а той се  връща  oбратно<br />
+ едно и едно  пак прави  нула<br />
+ изтриваш  тебешира  с потта си<br />
+</p>
+
+<p>
+Копаеш ло  пата след ло  пата<br />
+своя дом от  глинени  стени<br />
+мечтаеш  за мига ко  гато<br />
+ще се усмихнеш на  всичките цветя  преди да заспиш<br />
+</p>
+
+<p>
+Сизифе,  приятелю  беден<br />
+още ли  камъка  буташ<br />
+нима не разбра че  той ще  спре да се търкаля<br />
+едва когато ти  легнеш под  него<br />
+</p>
+
+<p>
+(цели)<br />
+ Недоверчиво ме  гледаш  Сизифе<br />
+ "Последните ще  бъдат първи" от  връщаш<br />
+ но дали ще до  чакаш ре  да си<br />
+ щом първите  живеят като за по  следно<br />
+</p>
+
+<p>
+Поспри за миг, ти  древен мъче  нико<br />
+приюти се под  моя  покрив<br />
+остани поне  докъто  бурята премине<br />
+нека пого  ворим без  думи<br />
+</p>
+
+<p>
+(разложени)<br />
+ Да приберем ста  дата си от  паша<br />
+ да запалим по  следната ци  гара<br />
+ да изгасим  свещите от  снощната молитва<br />
+ и утре всеки своя  камък ще  поеме<br />
+</p>
+
+<p>
+А ти  Сизифе,  бедни  друже<br />
+още дълго  камъка ще  буташ<br />
+само чуваш ли  недей да  спираш<br />
+смисълът е не в  камъните, а в сле  дите ни<br />
+</p>
+
+<p>
+Сизифе, при  ятелю  беден<br />
+още дълго  камъка ще  буташ<br />
+само чуваш ли  недей да  спираш<br />
+смисълът е не в  камъните, а в сле  дите ни<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org4579d93" class="outline-2">
+<h2 id="org4579d93"><span class="section-number-2">2.</span> Балада за приказния вълшебник Гугудей</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Куплет Am D<br />
+Припев G Am<br />
+</p>
+
+<p>
+Гугудей бе вълшебник от Ламанша на север зад  девет планини<br />
+Гугудей бе мъдър, той живял бе много цели  сто и двайсет дни<br />
+чучучу-чуу-чу-чу  зад девет планини<br />
+чучучу-чуу-чу-чу  цели сто и двайсет дни<br />
+</p>
+
+<p>
+В един страшен ден през две и двайста  беда връхлетяла света<br />
+Смъртоносен вирус избягал от Ухан и  нападнал наш'та земя<br />
+чучучу-чуу-чу-чу  беда връхлетяла света<br />
+чучучу-чуу-чу-чу  и нападнал наш'та земя<br />
+</p>
+
+<p>
+Събрали се всички световни министри и  повикали Гугудей<br />
+"О, молим те, наш премъдри вълшебник ти  вируса овладей!"<br />
+чучучу-чуу-чу-чу  и повикали Гугудей<br />
+чучучу-чуу-чу-чу  ти вируса овладей!"<br />
+</p>
+
+<p>
+Гугудей се усмихнал, повърнал си млякото и  рекъл "Агу-гу-ки!"<br />
+Тъй се родило вълшебно лекарство  ваксината "Агугукаин"<br />
+чучучу-чуу-чу-чу  и рекъл "Агу-гу-ки!"<br />
+чучучу-чуу-чу-чу  ваксината "Агугукаин"<br />
+</p>
+
+<p>
+Ето така през две и двайста  Гугудей света спаси<br />
+Гугудей бе мъдър, той живял бе много цели  сто и двайсет дни<br />
+чучучу-чуу-чу-чу  Гугудей света спаси<br />
+чучучу-чуу-чу-чу  цели сто и двайсет дни<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0d352b3" class="outline-2">
+<h2 id="org0d352b3"><span class="section-number-2">3.</span> Благодарствена</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+(t:110 r:4/4))<br />
+</p>
+
+<p>
+(разложени)<br />
+ Тази вечер пия за  моите врагове &#x2013;<br />
+най-верни учители бъдете винаги  с мен<br />
+ За приятелите оставям  последната глътка<br />
+ на своите доброжелатели обръщам  гръб<br />
+ За приятелите оставям  последната глътка<br />
+ на своите доброжелатели обръщам  гръб<br />
+</p>
+
+<p>
+(цели)<br />
+ Благодаря за неволите  пратени ни отгоре<br />
+чрез страданието израстваме отвъд  смъртта<br />
+ Казвам молитва за  любовта в сърцата ни,<br />
+ а на удобството и успеха обръщам  гръб<br />
+ Казвам молитва за  любовта в сърцата ни,<br />
+ а на удобството и успеха обръщам  гръб<br />
+</p>
+
+<p>
+(разложени)<br />
+ Благодаря на нощта приела ме в  своите обятия<br />
+на тъмно с черните мисли говорим  очи в очи<br />
+ Нямаме тайни, разно  гласията решаваме заедно<br />
+ и с открито лице посрещаме  светлите дни<br />
+ Нямаме тайни, разно  гласията решаваме заедно<br />
+ и с открито лице посрещаме  светлите дни<br />
+</p>
+
+<p>
+(цели)<br />
+ Вдигам последен тост за  тебе, човеко<br />
+солта на земята, пътя под наш'те  нозе<br />
+ на тебе крепи се  света ни, приятелю<br />
+ кажи че те има, че още по него   вървиш<br />
+ на тебе крепи се  света ни, приятелю<br />
+ кажи че те има, че още по него   вървиш<br />
+</p>
+
+<p>
+20130321<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org84e9769" class="outline-2">
+<h2 id="org84e9769"><span class="section-number-2">4.</span> Бог като моя</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+(t:110 r:4/4)<br />
+</p>
+
+<p>
+ Защо когато съм  естествен се чувствам  най-фалшив<br />
+Защо когато съм сред  хората се чувствам най-сам<br />
+ Защо у  дома се чувствам  бездомен<br />
+Защо в страната си се  чувствам чужденец<br />
+</p>
+
+<p>
+     Ще зачеркна  всички хора  от сърцето  си<br />
+(Хора не останаха)<br />
+     Ще изтръгна  всичките  илюзии от  себе си<br />
+(От мене нищо не остана)<br />
+     И аз зная  бог като моя  никой никога  няма да има<br />
+     но и аз с него  не бих бил  някога  някой<br />
+</p>
+
+<p>
+ Усещаш ли  празнотата която ни  обгръща<br />
+света -  пространство от кухи форми<br />
+ Всичко е това  което е  от вън<br />
+Чупиш черупката, от вътре - празнота<br />
+</p>
+
+<p>
+Когато  почукам на  твоята  врата<br />
+				    (Ще ми отвориш ли?)<br />
+Когато ти  помахам ще  кажеш ли  “Здравей”<br />
+				     (Кажи!)<br />
+Когато си  тръгна  ще  оставиш ли<br />
+вратата  си  отключена  след мен<br />
+</p>
+
+<p>
+Пр.<br />
+</p>
+
+<pre class="example">
+Куплет
+
+Dm        F1        A#        F2
+|||||x    ||||x|    |||||x    |||||x
+|||x||    |||x||    ||||||    ||xxx|
+||||x|    ||x|||    ||xxx|    ||||||
+
+Pripev: Dm | C | Am | G7 |
+</pre>
+
+<p>
+20101018<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org92e6cb4" class="outline-2">
+<h2 id="org92e6cb4"><span class="section-number-2">5.</span> Болест</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+(r:130 t:4/|4)<br />
+</p>
+
+<p>
+Verse G5 A5]<br />
+Riff<br />
+</p>
+
+<p>
+Той беше тъжен,  той  беше чо  век<br />
+"Болест е!", казваха  и се от  дръпваха в с  трах<br />
+"Болест е!", казваха,  "За  разна при то  ва!"<br />
+Прегръдката даже  за  разна би  ла<br />
+</p>
+
+<p>
+ Така да е и щом е така<br />
+аз сто пъти прегръщам чо  века  x2<br />
+ Прегръщам го сто пъти щом е така<br />
+щом прегръдката даже заразна била  x2<br />
+</p>
+
+<p>
+А "здравите" търсят  в група  та сигурно  стта<br />
+дефектът е предимство,  щом е споде  лен<br />
+И "Здравите" остават   в златната сре  да,<br />
+но златната среда  не ос  тавя сле  да<br />
+</p>
+
+<p>
+ Така да е и щом е така<br />
+аз безкрайно предпочитам крайност  та  x2<br />
+ Така да е и щом е така<br />
+аз отказвам да се лекувам от Болест  та  x2<br />
+</p>
+
+<p>
+Той беше тъжен,  той  беше чо  век<br />
+"Болест е!", казваха  и се от  дръпваха в с  трах<br />
+"Болест е!", казваха,  "За  разна при то  ва!"<br />
+Прегръдката даже  за  разна би  ла<br />
+</p>
+
+<p>
+ Така да е и щом е така<br />
+аз сто пъти прегръщам чо  века  x2<br />
+ Прегръщам го сто пъти щом е така<br />
+щом прегръдката даже заразна била  x2<br />
+</p>
+
+<p>
+20150415<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org109ce15" class="outline-2">
+<h2 id="org109ce15"><span class="section-number-2">6.</span> България като хероин</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+(r:130 t:4/4)<br />
+</p>
+
+<p>
+ x2<br />
+Кишавия сняг събиращ се по Софийските тротоари  има цвета на хероина.<br />
+Кафяв и мръсен от всичките примеси,  с които го тъпчеха "Младост"-ките пласьори.<br />
+Придобил цвета на кишата,  в която сиви силуети пълзяха по заледените Софийски улици,<br />
+уловени в безкрайния лабиринт  на измисленитре си цели.<br />
+Кишата -  кафеникава и мръсна като хероина който купувахме от Мира.<br />
+Връзката.  Винаги там. В дъжд, студ и сняг,<br />
+неотменно стои и ни чака на онази детска плащадка  в онзи сив Софийски квартал.<br />
+Мира -  призрачния силует на една друга България.<br />
+С тромбозирали вени, надупчени от илюзии.  Ръцете й - лабиринти от лилави пътища<br />
+останали след стъпките подир изгубените й спомени.  Косата й - сплъстена и разпиляна.<br />
+Някога златна.  Днес кална и мръсна. Като кишата.<br />
+Като хероина които ни продаваше.  -<br />
+</p>
+
+<p>
+Застина  ли на  прага на "нашето"  време<br />
+Невиди  ми - чужден  ци в чужда Бъл  гария<br />
+</p>
+
+<p>
+ x2<br />
+Беззъбата уста на Мира грозно се усмихваше  при вида на дрипавите й деца -<br />
+сиротни и чезнещи  като изгубените й надежди.<br />
+А децата й -  това бяхме ние.<br />
+Десетки Софийски сираци -  с мъртво минало и несъществуващо бъдеще.<br />
+Уродливи зародиши  преждевременно изхвърлени от утробата на "нашето" време.<br />
+Недъгави херцози - господари на една измислена реалност.<br />
+Синтетичната прегръдка на една майка мащеха -  единствената топлина която познавахме.<br />
+Мира -  призрачнния силует на една друга България.<br />
+И до днес я виждам.  Там - сред остатъците на разпиляната ни младост.<br />
+Майката коятo изпрати толкова много от децата си,  и ден подир ден ги оплаква с горчивите сълзи на съвестта си.<br />
+Мащехата, която прегръща децата си,  но не ги обича.<br />
+Като България.  Като хероин.<br />
+</p>
+
+<p>
+Застина  ли на  прага на "нашето"  време<br />
+Невиди  ми - чужден  ци в чужда Бъл  гария<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgaaacbbd" class="outline-2">
+<h2 id="orgaaacbbd"><span class="section-number-2">7.</span> В черно</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+(t:120 r:4/4)<br />
+</p>
+
+<p>
+ Черни  мисли в черно съз  нание -<br />
+черен  паяк черни нишки пле  те<br />
+ Черен силу  ет на черен фон  носи<br />
+на човек в  черно - черни цветя<br />
+</p>
+
+<p>
+ Днес се разминах с  себе си<br />
+по  тихата алея към онази  земя<br />
+ вървях натам от където се  връщах,<br />
+сму  тено си кимнах и извърнах  глава<br />
+</p>
+
+<p>
+ Черни дете  лини листят се в  черно<br />
+под черния  дъжд от черно не  бе<br />
+ Черни но  жове черни ръце  стискат<br />
+с черна  кръв кърви черно сърце<br />
+</p>
+
+<p>
+ Днес се разминах с  себе си<br />
+по  тихата алея към онази  земя<br />
+ вървях натам от където се  връщах,<br />
+сму  тено си кимнах и извърнах  глава<br />
+</p>
+
+<pre class="example">
+
+   o         o o           o            o 
+||||||      ||||||      ||||||      ||x|||
+|xx|||      ||x|||      ||x|||      |x|x||
+||||||      ||||||      |x||||      ||||||
+
+Пр. C | Am | D | Am ]
+</pre>
+
+<p>
+20110710<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga9a390d" class="outline-2">
+<h2 id="orga9a390d"><span class="section-number-2">8.</span> В любовта не вярвам</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+(t:120 r:4/4)<br />
+</p>
+
+<p>
+(разложени) maj7b5]  madd9]  sus2]   x2<br />
+</p>
+
+<p>
+Да maj7b5] ли съм бил влюбен madd9] питаш sus2] ти<br />
+maj7b5] "бил съм" не madd9] сигурно от sus2] връщам<br />
+maj7b5] "бил съм", но в ко madd9] го ко sus2] гато<br />
+ онова момиче  отиде си с  любовта<br />
+</p>
+
+<p>
+(цели) maj7b5]  madd9]  sus2]   x2<br />
+</p>
+
+<p>
+maj7b5] "Вярваш ли в любов madd9] та?" ме sus2] питаш<br />
+а ти maj7b5] вярваш ли в во madd9] дата, в въздуха, във песен sus2] та<br />
+ако maj7b5] Бог го имаше madd9] тогава sus2] пак ли<br />
+ да вярваш  в него щеше  ти?<br />
+</p>
+
+<p>
+maj7b5] Защо да madd9] вярваме в неща, те sus2] питам<br />
+maj7b5] които madd9] знаем че са sus2] тук?<br />
+maj7b5] Не, в любов madd9] та не sus2] вярвам<br />
+отго  варям  твърдо този  път<br />
+</p>
+
+<pre class="example">
+maj7b5]  madd9]  sus2]  
+    oo           o         oo         o
+||||||      ||||||     ||||||    ||||x|
+|||x||      |||x||     ||xx||    ||xx||
+||x|||      ||x|x|     ||||||    ||||||
+</pre>
+
+<p>
+20090902<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org83437a1" class="outline-2">
+<h2 id="org83437a1"><span class="section-number-2">9.</span> Въображение</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+(t:125 r:2/4)<br />
+(текст: Венцеслава Тодорова)<br />
+</p>
+
+<p>
+ Като че ли не сме  двамата,<br />
+а  само сенките ни са заедно<br />
+ Като че ли  не го  ворим,<br />
+ а това е само  ехото на  нашите гласове,<br />
+като че  ли не се по  глежда  ме<br />
+</p>
+
+<p>
+А  това са отраженията на  погледите ни<br />
+върху  черния фон  на тъмни  ната<br />
+</p>
+
+<p>
+ Като че ли не си  стискаме<br />
+ръ  цете за довиждане,<br />
+а  само ги до  пира  ме,<br />
+ за да се изтръгнем от без  мълвните  струни, които ни  свързват<br />
+и все така при  видно се раз  деля  мe&#x2026;<br />
+</p>
+
+<p>
+ И се оказва, че нашите сре  щи<br />
+не са били нищо  друго, ос  вен една раз  дяла &#x2013;<br />
+ отражения на  погледите ни<br />
+върху  черния фон  на тъмни  ната<br />
+</p>
+
+<pre class="example">
+
+     oo      ooo          oo
+i ||||||  i ||||||   i ||||||
+  ||x|||    ||||||     ||||||
+  ||||||    ||||||     |x||||
+</pre>
+
+<p>
+20140216<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb308c94" class="outline-2">
+<h2 id="orgb308c94"><span class="section-number-2">10.</span> Гара последна</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+(r:115 t:4/4)<br />
+</p>
+
+<p>
+Отве  ди ме влак към твоята  гара последна<br />
+во  ди ме и не  спирай за мен<br />
+Ще пъ  тувам до края на  твоята линия<br />
+во  ди ме и не  спирай за мен<br />
+</p>
+
+<p>
+Во  ди ме влак в но  щта необятна<br />
+по  следния влак в по  следния час<br />
+Во  ди ме към твоята  гара последна<br />
+и не  искам да  спираш за мен<br />
+</p>
+
+<p>
+В  тъмната нощ сме ос  танали двамата<br />
+ както в корема на  кита - Йона<br />
+Во  ди ме към твоята  гара последна<br />
+и не  искам да  спираш за мен<br />
+</p>
+
+<p>
+През про  зореца сенките чезнат както го  дините<br />
+и мракът навън е както мрака в  нас<br />
+в  търсене на своята гара по  следна<br />
+в очакване на последния  влак<br />
+</p>
+
+<p>
+В  тази нощ аз пъ  тувам за никъде<br />
+с по  следния влак в по  следния час<br />
+в  тази нощ не ме чака  никой никъде<br />
+во  ди ме и не  спирай за мен<br />
+</p>
+
+<p>
+ Зная, че там на твоята  гара последна<br />
+ще ме  срещне стрелочник със  строго лице<br />
+Ще  протегне ръка и ще  кимне безизразно<br />
+ както домакин на край  пътен мотел<br />
+</p>
+
+<p>
+Но  аз ще стъпя на тази  гара последна<br />
+и ще раз  пръсна на вятъра  шепа земя<br />
+Както  скитник и както ка  торжник в изгнание<br />
+след го  дини завръщащ се  пак у дома<br />
+</p>
+
+<p>
+През про  зореца сенките чезнат както го  дините<br />
+и мракът навън е както мрака в  нас<br />
+в  търсене на своята гара по  следна<br />
+в очакване на последния  влак<br />
+</p>
+
+<p>
+20141113<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgae45bd6" class="outline-2">
+<h2 id="orgae45bd6"><span class="section-number-2">11.</span> Геометрия на безмислието</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+(t:70 r:2/4)<br />
+</p>
+
+<p>
+Мислиш за живота като за  права<br />
+От начало по нея с надежда вър  виш<br />
+по средата си разочарован, а на  края<br />
+края среда да беше поне  мечтаеш ти<br />
+</p>
+
+<p>
+Безмислието те за  лива<br />
+вълна, след вълна, след въл  на<br />
+Превръщаш се в  точка и  скоро  се скриваш<br />
+и дали някои друг утре ще помни,  на твоя живот  песента<br />
+</p>
+
+<p>
+А всъщност животът е  кръг<br />
+и докъто трескаво центъра  търсиш<br />
+бавно около теб се затваря  кръгът<br />
+скоро и ти с него се  свършваш<br />
+</p>
+
+<p>
+Безмислието те за  лива<br />
+вълна, след вълна, след въл  на<br />
+Превръщаш се в  точка и  скоро  се скриваш<br />
+и дали някои друг утре ще помни,  на твоя живот  песента<br />
+</p>
+
+<pre class="example">
+Em     A7sus2
+   ooo  o ooo
+|||||| ||||||
+|xx||| ||x|||
+|||||| ||||||
+</pre>
+
+<p>
+20100416<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org5e054a7" class="outline-2">
+<h2 id="org5e054a7"><span class="section-number-2">12.</span> Героична</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+(r:130 t:4/4)<br />
+</p>
+
+<p>
+Аз не  съм герой и не  искам да  бъда<br />
+Топли  ната на  живота сгрява сър  цето<br />
+ Блясъка на  славата го при  мамва<br />
+ и го за  хвърля сту  дено<br />
+</p>
+
+<p>
+Аз не  съм герой  и не искам да  бъда.  Твоята вярност към<br />
+ дълга е на  друг прикритие за  измамата<br />
+ По-щастлив си  когато си известния  никой,<br />
+ отколкото ко  гато си някой  известен<br />
+</p>
+
+<p>
+И въобще, всъщност няма зна  чение<br />
+кои днес са ге  роите<br />
+Мен ако питате няма съм  нение,<br />
+че по-важно е кой раз  дава ме  далите<br />
+</p>
+
+<p>
+Аз не  сам герой  и не искам да  бъда<br />
+Като  пясък през  пръстите изчезват  минутите<br />
+ Твърде малко са,  за да ги изжи  веем<br />
+ като геро  ично се тупаме в  гърдите си<br />
+</p>
+
+<p>
+И въобще, всъщност няма зна  чение<br />
+кои днес са ге  роите<br />
+Мен ако питате няма съм  нение,<br />
+че по-важно е кой раз  дава ме  далите<br />
+</p>
+
+<p>
+20100412<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org283dd7b" class="outline-2">
+<h2 id="org283dd7b"><span class="section-number-2">13.</span> Гняв Народен</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+(feat. Kecs Beat's)<br />
+</p>
+
+<p>
+'земи тия криви рими &#x2013; без пари давам ги!<br />
+Не се продава което е от сърцето ми<br />
+Не се права на гангстер<br />
+Като Ъпсурт оставам го на него, пич<br />
+но не съм фен и на Горан Брегович<br />
+'щото сами себе си закопаваме<br />
+докато чакаме все някой друг да оправя ни<br />
+Братя Маргинали под чадъри ги пазят ченгета<br />
+с черни куфари в черни Беемвета<br />
+Глупаци до живот и царе за 800 дена<br />
+докъто шепа дрипльовци на вън вика "Промена!"<br />
+Промяна ли? Аре ето ви!<br />
+Земете тия стари нови муцуни &#x2013; ето ги!<br />
+Пра'ат се на агънца, но не е лесно<br />
+Колко- и да се боядисват са се същите &#x2013; от Шесто<br />
+</p>
+
+<p>
+'земи, шефе тия рими<br />
+В тях гнева народен чуваш ли<br />
+Още малко кожите им ще щавите<br />
+Под ножовете им ще отговаряте<br />
+</p>
+
+<p>
+Колко години треба още да вървим надолу<br />
+68 стигат &#x2013; тая песен май я пяхме скоро<br />
+в едно минало време което казваха било е наше<br />
+но нашето е минало а наш'те викат "Надеждата ни в вас е!"<br />
+Уморени сме! Не разбрахте ли?<br />
+От какво ли? Оглупяхте ли?<br />
+С две висши и диплома от чужбината<br />
+младеж се завръща с надежда в родината<br />
+300 лева, за да промотира цени надути<br />
+на новата услуга: "Безплатни минути"<br />
+Безплатни са, но не за тебе, копеле<br />
+Без трудов договор си и без осигуряване<br />
+Но 'сичко е ток щото май си за малко<br />
+стажа ти изтече &#x2013; колко жалко!<br />
+"Успех, момче!", вика шефа преди да излезеш<br />
+и мазно кани следващия след тебе да влезе<br />
+</p>
+
+<p>
+Иначе "Работа колкото искаш!", министъра вика<br />
+Не можело 'сички да са специалисти!<br />
+Пицари, пазачи, готвачи, лапачи,<br />
+срамна работа няма &#x2013; той сам познавач е<br />
+И потъва удбно в брониран Джип зад тъмни стъкла<br />
+И се усмихва доволно от екрана с шампанско в ръка<br />
+И после го снимат на едни острови в яхта<br />
+в компанията на едни други трудови братя<br />
+И сичко е шес' и не била работата голяма,<br />
+"Защото", казва министъра "срамна работа няма!"<br />
+И верно за инициативните хляб винаги има &#x2013;<br />
+кавали по телефона в Call Центъра за 800 кинта<br />
+Борса за черноработници стана страната ни,<br />
+а ония викат "Радвай се, че в Европа си!"<br />
+Но малко още кожите ни ще щавите<br />
+Пред гнева народен скоро ще отговаряте<br />
+</p>
+
+<p>
+'земи, шефе тия рими<br />
+В тях гнева народен чуваш ли<br />
+Още малко кожите им ще щавите<br />
+Под ножовете им ще отговаряте<br />
+</p>
+
+<p>
+И на теб ли ти писна, копеле от мерзавци<br />
+От лайнари, тежкари, търгаши, еснафи<br />
+"Тука има - тука нема!" играчи на дребно<br />
+В евтин базар превърнаха храма, не е ли верно?<br />
+И преди и сега партийни младежи<br />
+на почит са и плетат мрежи<br />
+Високо в структурата да се издигат желаят<br />
+Като партийния лидер да бъдат мечтаят<br />
+Прости момчета, на прост народ падари,<br />
+в евтино риалити шоу артиси бездарни<br />
+Но ние нещастниците сме много повече<br />
+безмълвно търпим, но не забравяме<br />
+Само толко' може от празен джоб да се 'земе<br />
+Преди да е започнало свърши новото ви време<br />
+И малко още кожите ни ще щавите<br />
+Пред гнева народен скоро ще отговаряте<br />
+</p>
+
+<p>
+"A помните ли преди 89-та?", вика другаря<br />
+"Билета &#x2013; 6 ст'инки, работа за 'сички!", народа уговаря<br />
+"Проф-съюза дава карти за почивка:<br />
+лев и двайсе' е един храноден в Китен"<br />
+Как за 68 години не се научихме да мислим с главите си<br />
+Вместо това мислим само с ушите си<br />
+'сичко е демагогия, прах в очите ни<br />
+и преди и сега се едни са цените<br />
+'щото не се променя на човещината цената<br />
+А тя е ниска щом рибата мирише от главата<br />
+Затова, копеле земи лопатата и сам помогни си<br />
+За да може и онзи горе да помогне на 'сички<br />
+Щото докъто вярваш, че там има някой,<br />
+който знае по-добре кое за тебе как е<br />
+същия този от твойта наивност печели процент,<br />
+докъто ти се правиш на ощетен<br />
+</p>
+
+<p>
+'земи, шефе тия рими<br />
+В тях гнева народен чуваш ли<br />
+Още малко кожите им ще щавите<br />
+Под ножовете им ще отговаряте<br />
+</p>
+
+<p>
+20130601<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org84f1395" class="outline-2">
+<h2 id="org84f1395"><span class="section-number-2">14.</span> Да сънуваш съня си</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+(t:140 r:4/4)<br />
+</p>
+
+<p>
+ Дали има пре  раждане<br />
+/ В един друг живот / я сънувах<br />
+/ Като море от / кестени<br />
+/ С ухание на сухи / листа<br />
+/ С коси виещи се като / горски пътеки<br />
+/ и аз - изгубен скитник / сред тях<br />
+/ Дали има пре / раждане<br />
+/ В един друг живот / сънувах я като есен<br />
+</p>
+
+<p>
+Днес сънувам  съня си<br />
+в който тя  бе като  есен<br />
+а през очите ми гледат  очите<br />
+на скитник  изгубен в  чужд сън<br />
+</p>
+
+<p>
+ Дали има пре  раждане<br />
+/ Далечното ехо / на изпяните строфи<br />
+/ в бъдещето ни връща / отново<br />
+/ с ухание на сухи / листа<br />
+/ И под коса виеща се / като горска пътека<br />
+/ изечeзваме като скитници / в нощта<br />
+/ Дали има пре / раждане<br />
+/ В един друг живот / сънувах я като есен<br />
+</p>
+
+<p>
+Навярно прераждане  няма, а ние сме<br />
+сянка на  нашата  сянка<br />
+така и наш'те  животи<br />
+са сънища в  съня, в който  живеем<br />
+</p>
+
+<pre class="example">
+Куплет
+
+
+||||||      ||||||
+||--||      |||-||
+||||||      ||-|||
+||||||      ||||||
+
+Припев
+
+
+||||-|
+|||-||
+||-|||
+||||||
+
+F2 | Am | G F Am ] x2
+</pre>
+</div>
+</div>
+<div id="outline-container-org23bf24d" class="outline-2">
+<h2 id="org23bf24d"><span class="section-number-2">15.</span> Две имена</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+(r:125 t:4/4)<br />
+</p>
+
+<p>
+(ниско)<br />
+</p>
+
+<p>
+E7no3/B  Cmaj7  Cadd9] x2<br />
+</p>
+
+<p>
+Най-доб  рото което  можа да нап  равиш<br />
+беше да на  пуснеш тази стра  на<br />
+виж сле  дите ти из  чезват<br />
+на дните  под пяна  та<br />
+</p>
+
+<p>
+ Колко  трупове са  нужни<br />
+ за да  стане плани  на<br />
+  достатъчно висо  ка<br />
+за се  видят  две име  на<br />
+</p>
+
+<p>
+E7no3/B  Cmaj7  Cadd9] x2<br />
+</p>
+
+<p>
+Виж ли  ка ти изблед  нява<br />
+чуй шепо  та на внуци  те<br />
+един милио  н е  голямо чис  ло<br />
+но без всичките  нули то е  само  едно<br />
+</p>
+
+<p>
+ Колко  трупове са  нужни<br />
+ за да  стане плани  на<br />
+  достатъчно висо  ка<br />
+за се  видят  две име  на<br />
+</p>
+
+<pre class="example">
+Куплет
+
+
+||||||  ||||||     ||||||   ||||||
+|xx|||  |xx|||     ||x|||   ||x|||
+||||||  ||||x|     |x||||   |x||x|
+
+Припев
+
+
+||||x|  ||||x|  ||||||  ||||||       ||||||  ||||x|  ||||||
+||xx||  ||xx|x  ||x|||  ||x|||    +  |||x|x  ||x|||  |xx|||
+||||||  ||||||  ||||||  ||||x|       ||||x|  |x||||  ||||||
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgb46e4ce" class="outline-2">
+<h2 id="orgb46e4ce"><span class="section-number-2">16.</span> Други няма</h2>
+<div class="outline-text-2" id="text-16">
+<p>
+на Michael Gira<br />
+</p>
+
+<p>
+ Търсим другите, а други  няма<br />
+\ Най-добрия ни приятел остава само \ тата<br />
+\ Празни фрази от празни \ думи,<br />
+\ на празен език без сми \ съл<br />
+\ Вехти картички от \ теб до теб<br />
+\ от места, в които те е \ нямало<br />
+</p>
+
+<p>
+\ Изкуствен. Сам. Без \ смисъл.<br />
+\ Изкуствен. Сам. Без \ никой.<br />
+\ Изкуствен. Сам. Без \ нищо.<br />
+\ Без посока. Без \ посока.<br />
+</p>
+
+<p>
+\ Припознаваме отново и \ отново<br />
+\ Собственото си лице в \ стотици чужди<br />
+\ Сами сред милиони \ хора<br />
+\ вкопчени един в друг по \ навик<br />
+\ Илюзията, че не сме \ сами<br />
+\ притъпява страха ни от \ смъртта<br />
+</p>
+
+<p>
+\ Търсим другите, а други \ няма<br />
+\ Търсим другите, а други \ няма<br />
+\ Търсим другите, а други \ няма<br />
+\ И най-добрия ни приятел остава само \ тата<br />
+</p>
+
+<p>
+\ Имплуса да вярваш \ още те носи<br />
+\ сам над водната \ стихия<br />
+\ Пиян кораб без \ пътници<br />
+\ без бряг, без \ посока<br />
+\ Сухо листо на \ кухия клон<br />
+\ на нечий празен \ живот<br />
+</p>
+
+<p>
+\ Изкуствен. Сам. Без \ смисъл.<br />
+\ Изкуствен. Сам. Без \ никой.<br />
+\ Изкуствен. Сам. Без \ нищо.<br />
+\ Без посока. Без \ посока.<br />
+\ Без посока. Без \ посока.<br />
+\ Без посока. Без \ посока.<br />
+</p>
+
+<pre class="example">
+
+	oo              o           oo           o
+iii ||||||     iii ||||x|     i ||||||    i ||||x|
+    ||xx||         ||xx||       ||xx||      ||xx||
+    ||||||         ||||||       ||||||      ||||||
+    ||||||         ||||||       ||||||      ||||||
+</pre>
+
+<p>
+20140212<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge685ca2" class="outline-2">
+<h2 id="orge685ca2"><span class="section-number-2">17.</span> Една бира време</h2>
+<div class="outline-text-2" id="text-17">
+<p>
+(t:140 r:2/4)<br />
+ Една бира  време ни  дели от  мига<br />
+ в който  трябва да се  вземе  решение<br />
+ да се вземе  решение  какво да се  прави<br />
+ какво да се прави след  една бира  време<br />
+</p>
+
+<p>
+(t:170 r:2/4)<br />
+ Но как да  измерим една бира  време<br />
+щом  всичките часове  на света<br />
+ една бира време не ще  засекат<br />
+</p>
+
+<p>
+(t:140 r:2/4)<br />
+ Защото  една бира  време  изтича<br />
+ по-бързо и  от най-  краткия  миг<br />
+ и скоро  трябва да се  вземе  решение<br />
+ какво да се прави след  една бира  време<br />
+</p>
+
+<p>
+(t:170 r:2/4)<br />
+ Ееех, преди  време имах една бира  време<br />
+ Но вече изтече и аз взех  трезво решение:<br />
+ "Налейте още една бира за  мене!"<br />
+</p>
+
+<p>
+20111003<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org09b5f50" class="outline-2">
+<h2 id="org09b5f50"><span class="section-number-2">18.</span> Емилия, сбогом</h2>
+<div class="outline-text-2" id="text-18">
+<p>
+(t:105 r:4/4)<br />
+</p>
+
+<p>
+гледам картините ти, емилия.  мисля за саморазрушението.  за живота.  за страданието.<br />
+за улицата.  за хероина  за това как бях наркоман в едно друго  минало.<br />
+мисля за онова мазе в центъра на софия&#x2026;  един друг май месец.  -  -<br />
+годините изтичат като вода през  пробито корито.  -  -<br />
+мисля за това че живота е повече от  бюро и книга.  мисля си за теб.  -<br />
+в сърцето малко боли.  трансформирам болката в красота.  както казваше ти.  в красотата на изкуството.<br />
+на думите.  от както заминах  бързо ме хипнотизира отново  измамния смисъл на дните.<br />
+пътуванията.  работата в която се изгубвам.  лудия бяг  в преследването на призраци.<br />
+спомних си деня в които реших че ще бъда  чист.  извадих всичките игли от себе си,  изплюх със злоба хаповете синтетична надежда<br />
+и се преродих  под присъдата на времето:  осъден  на живот.<br />
+и всичко заочнах на чисто.  остана ми само едно от онова време:  преследването на призраци.  призраци -<br />
+онези измислени цели,  в които се хващаме като удавници за сламка.  за да не се удавим в морето на  живота.<br />
+защото призраците могат да бъдат по-истински от  реалността, емилия.  когато вярваш в тях.  -<br />
+почти като хероина.  може би аз все пак си останах наркоман.  казват че наркоманите се раждат  такива.<br />
+може би.  в мислите поне.  не зная дали ме разбираш, емилия&#x2026;  емилия.<br />
+красиво е.  като водна лилия.  като водна лилия в морето на живота.  моя живот.<br />
+мисля за теб.  в сърцето малко боли.  чувствам се загрубял,  емоционално осакатен,<br />
+кух,  с дупка на мястото на сърцето.  кух&#x2026;  -<br />
+сигурно е от годините.  остарявам, емилия.  сигурно е от годините.  -<br />
+сърцето е там но не тупти като преди.  кръвта все още е червена,  но не толкова гъста.  като преди.<br />
+един приятел каза  "на 32 сърцето вече се е уморило  да дава". може би.  може би не.<br />
+мисля за теб, емилия.  едно само зная, емилия&#x2026;  когато съм пак до теб.  когато мога да те докосна.<br />
+когато мога да усетя вкуса на устните ти.  когато мога да галя гърдите ти.  когато мога да те целувам  по цялото тяло.<br />
+когато заедно голи преплуваме ноща  чак до края й. когато  сплели краката си отново творим.  заедно. в едно.<br />
+когато правите ти коси нарежат лицето ми  от него ще рукне  нс струи  гъста кръв. на червено.<br />
+тогава ще е истинско.  тогава ще сме истински.  тогава сърцето ми поне за миг ще тупти  както преди.<br />
+както преди&#x2026; поне за миг.  поне за миг.  -<br />
+но до тогава, емилия &#x2026;  до тогава&#x2026;  до тогава  всичко са само сенки,<br />
+символи,  забравени усещания,  надежда &#x2026;  осъдени на живот.<br />
+не зная дали ме разбираш, емилия&#x2026;  емилия.  красиво е.  емилия.<br />
+сбогом.<br />
+</p>
+
+
+<pre class="example">
+   Em         F#       G
+   o          o        o
+ii ||||||  iv |||||| v ||||||
+   |xx|||     |xx|||   |xx|||
+   ||||||     ||||||   ||||||
+
+E | F# | G | F# } x repeat forever
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org1223745" class="outline-2">
+<h2 id="org1223745"><span class="section-number-2">19.</span> Есенен следобед</h2>
+<div class="outline-text-2" id="text-19">
+<p>
+(t:130 r:4/4)<br />
+</p>
+
+<p>
+Есенен  следобед,  дъждът е  спрял<br />
+Капките  проблясват  по   листата  (2nd voice)<br />
+Вятърът  разнася  пустота<br />
+Самотен  силует  навежда  глава<br />
+</p>
+
+<p>
+ Хей, приятелю<br />
+защо  някои  неща са просто  така<br />
+И кой  прави това<br />
+да  бъде  просто така  само така (2nd voice)<br />
+ Боли<br />
+</p>
+
+<p>
+Зереян  поглед  потопен в тъ  га<br />
+сухи  устни шепнещи "За  що?"   (2nd voice)<br />
+Уморената  ръка из  трива съл  зите<br />
+шепнат  сухите  клони<br />
+</p>
+
+<p>
+ Хей, приятелю<br />
+защо  някои  неща са просто  така<br />
+И кой  прави това<br />
+да  бъде  просто така  само така (2nd voice)<br />
+ Боли<br />
+</p>
+
+<pre class="example">
+Am       Am*      C        D*       C*       C**
+     o      o                            o    
+||||x|   ||||x|   ||||x|   ||||||   ||||x|   ||||x|
+||xx||   ||x|||   |||x||   |||x||   ||||||   |||x||
+||||||   ||||||   |x||||   ||||x|   |x||||   ||||||
+</pre>
+
+<p>
+1997 г.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbbaf850" class="outline-2">
+<h2 id="orgbbaf850"><span class="section-number-2">20.</span> Ези-тура блус</h2>
+<div class="outline-text-2" id="text-20">
+<p>
+(t:120 r:4/4)<br />
+</p>
+
+<p>
+Всяка жена е като късмета<br />
+непостоянна  е тя (х2)<br />
+днес е при теб а утре  ще чука<br />
+на нечия друга  врата<br />
+</p>
+
+<p>
+Всеки мъж е монета<br />
+монета с две  страни (х2)<br />
+на едната пише "Пе  челиш."<br />
+на другата - "Пак  хвърли!"<br />
+</p>
+
+<p>
+Всеки живот игра е<br />
+игра на "Ези-  Тура" (х2)<br />
+как ще падне товойта мо  нета<br />
+зависи какъв и е  бил късмета<br />
+</p>
+
+<p>
+20091122<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org62bbb7a" class="outline-2">
+<h2 id="org62bbb7a"><span class="section-number-2">21.</span> Езичница блус</h2>
+<div class="outline-text-2" id="text-21">
+<p>
+(t:120 r:4/4 ? 2/4)<br />
+</p>
+
+<p>
+Направи ме твои бог ти - бог с корона от тръни<br />
+молеше се всяка нощ  на светия агнец (x2)<br />
+Tвой олтар беше той,  бе твоя опора<br />
+кичеше го нежно с'своя  нарцисов венец<br />
+</p>
+
+<p>
+Мина време разбрах че друга е твоята вяра<br />
+че и други богове  почиташе ти (х2)<br />
+Eзичница била си, а аз -  бог на овчаря<br />
+и не с корона а с чифт  овчи роги<br />
+</p>
+
+<p>
+Направи ме твои бог ти - бог с корона от тръни<br />
+молеше се всяка нощ  на светия агнец (x2)<br />
+Tвой олтар беше той,  бе твоя опора<br />
+кичеше го нежно с'своя  нарцисов венец<br />
+</p>
+
+<p>
+20091003<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb6a9a21" class="outline-2">
+<h2 id="orgb6a9a21"><span class="section-number-2">22.</span> Зад 10-ти блок</h2>
+<div class="outline-text-2" id="text-22">
+<p>
+(t:240 r:3/4)<br />
+</p>
+
+<p>
+Пролетта  каца на  моето рамо  и  шепне за  отминали<br />
+години.  Спомних си  старото  гранитно  училище<br />
+скрито  сред  лабиринт от  павирани  улици<br />
+на си  вата  София от  моето  детство<br />
+</p>
+
+<p>
+По нишката на  спомена бавно на  мирам стъпките си  назад,  назад,  назад<br />
+и сам не раз  бирам от та-a-a-м  как, отдалечил съм се  пак,  пак,  пак<br />
+</p>
+
+<p>
+Скрити  зад  10-ти блок,  седнали на  сивите<br />
+стълби  до  мазетата  мръсни  хлапета<br />
+пушат  тайно и  се кълнат, че  никога  няма<br />
+да носят  куфар  и да вървят като  онези  с костюмите<br />
+</p>
+
+<p>
+И с върха на  цигара прогарят  небето. И днешното вчера е  утре, но то е  толкова  далеко<br />
+И дробо  вете за пръв път  и последен, поглъщат дъха на  живота  с болка  и смях<br />
+</p>
+
+<p>
+И мо  мичето  с златни коси се  смее срещу  слънцето<br />
+и ръцете  танцуват  с огъня и  рисуват  сърца<br />
+И никой не  мисли за  лудостта,  която  погубва<br />
+всички  дръзнали  да горят  с пламъка  до край<br />
+</p>
+
+<p>
+И с върха на  цигара прогарят  небето. И днешното вчера е  утре, но то е  толкова  далеко<br />
+И дробо  вете за пръв път  и последен, поглъщат дъха на  живота  с болка  и смях<br />
+</p>
+
+<p>
+Пролетта  каца на  моето рамо  и  шепне за  отминали<br />
+години и  тежестта на  спомена  тегли  сърцето<br />
+надолу,  надолу към  дъното на  водопада от  чувства -<br />
+камък  вързан на  шията на  самоубиец  в река<br />
+</p>
+
+<p>
+Реката на жи  вота която изгубваш и  намираш. И без дъх тичаш подир  нея, а тя  не спира и  не спира<br />
+И сам не раз  бираш от та-a-a-м  как, отдалечил си се  пак,  пак,  пак<br />
+</p>
+
+<p>
+20130417<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf364512" class="outline-2">
+<h2 id="orgf364512"><span class="section-number-2">23.</span> За онези истини</h2>
+<div class="outline-text-2" id="text-23">
+<p>
+(t:140 r:4/4)<br />
+</p>
+
+<p>
+От спомените си умирам  и се пре  раждам в  тях |<br />
+и сякаш е само миг, а  всъщност  е   вечност |<br />
+Завръщам се в о  нези  зими в Соф  ия |<br />
+когато дъха из  лиза  през теб като  стих |<br />
+</p>
+
+<p>
+и алкохола  стопля като  "Обичам те"   |<br />
+</p>
+
+<p>
+Завръщам се при  теб в о  нази  нощ |<br />
+Студът ско  вава  зимна  Владая |<br />
+и воя на Воев  вие през сте  ните,<br />
+а ние двамата, об  легнати от  другата стра  на|<br />
+</p>
+
+<p>
+Винаги от  другата стра  на|   |<br />
+</p>
+
+<p>
+И онези истини в 2 сутринта,  които се казват на студено в нощта (ниско) |    х 2<br />
+пронизват тишината като вика  на самоубиец от ръба на скала (високо) |    х 2<br />
+</p>
+
+<p>
+И две очи  срещат  две  очи |<br />
+и истината като  две  реки  струи |<br />
+безкрайно вливащи се в  себе  си<br />
+една в друга през огле  дало  то на  Бог|<br />
+</p>
+
+<p>
+И рекурсията на ми  га създава вечност  та |   |<br />
+</p>
+
+<p>
+И сякаш е миг, а всъщност е вечност  и сякаш е вечност, а всъщност е миг (високо) |    х 2<br />
+И онези истини в 2 сутринта,  които се казват на студено в нощта (ниско) |    х 2<br />
+</p>
+
+<p>
+Завръщам се при  теб в  тази  нощ |<br />
+Студът ско  вава  зимна  Владая |<br />
+и воя на Воев  вие през сте  ните,<br />
+а ние двамата, об  легнати от  другата стра  на|<br />
+</p>
+
+<p>
+Винаги от  другата стра  на |   |<br />
+</p>
+
+<p>
+20130415<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgcb20c42" class="outline-2">
+<h2 id="orgcb20c42"><span class="section-number-2">24.</span> За отчаяние е късно</h2>
+<div class="outline-text-2" id="text-24">
+<p>
+(t:65 r:2/4)<br />
+</p>
+
+<p>
+Сладко отчая  ние<br />
+посети ме от maj7] ново<br />
+Кажи ми пак че няма из  ход<br />
+Обещай ми смър maj7] тта<br />
+</p>
+
+<p>
+Погали ме по  влажната буза<br />
+подай ми отново maj7] ръка<br />
+Още веднъж нека по  вярвам в теб<br />
+Обещай ми maj7] смъртта<br />
+</p>
+
+<p>
+За отчаяние е  късно<br />
+всичко следва своя  ред<br />
+Малките реки се вливат в  големи<br />
+големите превръщат се в  в море<br />
+</p>
+
+<p>
+Сладко отчая  ние<br />
+отвъд твоето спасение сме maj7] вече<br />
+Късно е да изгорим в  изгрева<br />
+присъдата ни е maj7] "Живот"<br />
+</p>
+
+<p>
+От тук нататък  бавно ще крачим<br />
+към тихия край на нашия maj7] път<br />
+Не потъна пияния  кораб на дните ни<br />
+Присъдата ни е maj7] "Живот"<br />
+</p>
+
+<p>
+За отчаяние е  късно<br />
+всичко следва своя  ред<br />
+Малките реки се вливат в  големи<br />
+големите превръщат се в  в море<br />
+</p>
+
+
+<pre class="example">
+maj7]
+     o
+||||x|
+|||x||
+||x|||
+</pre>
+</div>
+</div>
+<div id="outline-container-orgc6f37d3" class="outline-2">
+<h2 id="orgc6f37d3"><span class="section-number-2">25.</span> Игра</h2>
+<div class="outline-text-2" id="text-25">
+<p>
+(t:110 r:2/4)<br />
+</p>
+
+<p>
+(текст: Лора Динкова)<br />
+</p>
+
+<p>
+В ръката  ми &#x2013;  цветя за  честване,<br />
+а уж не  трябва  да вдигам  с жестове<br />
+ръцете  си  и двете в  кръстове&#x2026;<br />
+Ръцете  й,  и двете  скръстени<br />
+</p>
+
+<p>
+сега  показват  ново пре  раждане<br />
+Спокойни  са &#x2013;  и със пре  чистване,<br />
+сега са  с погледи,  но не към  мене &#x2013;<br />
+а уж  не трябва  да вдигам  с жестове&#x2026;<br />
+</p>
+
+<p>
+Ch.  Ръцете им  потрепват  глухо<br />
+      Навярно  скъпи.<br />
+      Какво ни  свързва? &#x2013;<br />
+      възможно е да  пиша  стихове за<br />
+     мъртвите G A]<br />
+</p>
+
+<pre class="example">
+Ve: Em Bm G A
+Ch: Em Bm C D
+</pre>
+
+<p>
+20160811<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3108a77" class="outline-2">
+<h2 id="org3108a77"><span class="section-number-2">26.</span> Лозунг "Промяна"</h2>
+<div class="outline-text-2" id="text-26">
+<p>
+(r:130 t:2/4)<br />
+</p>
+
+<p>
+Стархувам се от  стаи,  в които се  шепне<br />
+страхувам се от  разговори зад  врати<br />
+Институциите ни са  затвори  за нас  самите<br />
+в които   нечовешки вид се  ражда и расте<br />
+</p>
+
+<p>
+Създадохме  закона да  запазим  краденото<br />
+Създадохме  пагона да ни  брани от ограбените<br />
+Създадохме  училища в  които да се  учим<br />
+че градиме  най-добрия   възможен свят<br />
+</p>
+
+<p>
+По-малко  мъдрост и по  вече  дързост<br />
+повече  гняв и  по-малко срам<br />
+Опианени от  себе си  мислим най-  трезво:<br />
+по равно за  всички, но  всичко за нас<br />
+</p>
+
+<p>
+Днес пак сме  навън и  крещиме  "Промяна"<br />
+а в отговор само  нашето  ехо кънти<br />
+На барикадите е  пусто и  кой да каже  няма<br />
+че промяна е  нужна, но  първо в теее  ееб<br />
+</p>
+
+<p>
+Родени в на  минотавъра  лабиринта<br />
+вървим след  стъпките си в  кръг<br />
+и чакаме своя  Тизей да ни  спаси  от  вънка<br />
+докъто по един  Тизей чака във  всеки от нас<br />
+</p>
+
+<p>
+Технологично раз  вити,  обути и  сити<br />
+дори май щаст  ливи, общо-  взето поне<br />
+Купуваме  нищо, на  цената  на всичко<br />
+стойността е в  това от което  се чувствам добре<br />
+</p>
+
+<p>
+Порастваме  бързо,  затъваме  бавно,<br />
+и с калта на  света ни както  Лейди Макбет<br />
+петната от  кръв  все по-трудно  ще крием<br />
+от бялата  дреха на  съвестта<br />
+</p>
+
+<p>
+Първи не  сме, тук и  други  били са &#x2013;<br />
+и Египет и  Рим са  днес в прахта<br />
+Първи не  сме, но ще  бъдем  последни<br />
+щом монета  търсим в про  тегнатата ръка<br />
+</p>
+
+<p>
+Щом казват  изкуството  било  огледало<br />
+вземете,  моля, това огле  дало сега<br />
+Погледнете  навътре и своя  лозунг "Промяна"<br />
+изправете  пред него, а  не пред света  аааа<br />
+</p>
+
+<p>
+Родени в на  минотавъра  лабиринта<br />
+вървим след  стъпките си в  кръг<br />
+и чакаме своя  Тизей да ни  спаси  от  вънка<br />
+докъто по един  Тизей чака във  всеки от нас<br />
+</p>
+
+<p>
+20130318<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge63a6fd" class="outline-2">
+<h2 id="orge63a6fd"><span class="section-number-2">27.</span> Льовен, здравей</h2>
+<div class="outline-text-2" id="text-27">
+<p>
+(детска песничка)<br />
+</p>
+
+<p>
+(t:120 r:4/4)<br />
+</p>
+
+<p>
+ Щом Биси е при Веско<br />
+щом Веско е при Биси<br />
+ всичко ще бъде  наред<br />
+ Щом всички сме си вкъщи<br />
+никой няма да се мръщи<br />
+ и всичко ще бъде  наред<br />
+</p>
+
+<p>
+Дори и заедно да не  сме<br />
+пак никой няма да ни  спре<br />
+да се обичаме и пеем<br />
+да пеем и да се смеем<br />
+и всичко ще бъде  наред<br />
+</p>
+
+<p>
+Зааа-  щооо-  тоо&#x2026;<br />
+</p>
+
+<p>
+Щом Алфи е при Рошко<br />
+щом Петрарка (не) е при Гошко<br />
+всичко ще бъде наред<br />
+Задружни всичките проблеми<br />
+решават се без време<br />
+и всичко ще бъде наред<br />
+</p>
+
+<p>
+Когато Рошко каже "Да!"<br />
+Веднага Алфи казва "Не!"<br />
+Веско гледа Биси<br />
+Биси казва "Ти си!"<br />
+а Петрарка казва "Добре."<br />
+</p>
+
+<p>
+Зааа-щооо-тоо&#x2026;<br />
+</p>
+
+<p>
+Щом Биси е при Веско<br />
+щом Веско е при Биси<br />
+всичко ще бъде наред<br />
+</p>
+
+<p>
+Ооо-ле!<br />
+</p>
+
+<p>
+2010 г.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgfaa86fb" class="outline-2">
+<h2 id="orgfaa86fb"><span class="section-number-2">28.</span> Метедрин</h2>
+<div class="outline-text-2" id="text-28">
+<p>
+Мислите като кръвожадни вълци се прескачат в главата ми. Препускат<br />
+бясно през снежната гора на съзнанието ми. Глутница от зверове сама<br />
+раждаща себе си. Безкраен поток. Неуловим. Неумолим. Ръцете ми<br />
+треперят. Съзнанието ми се взривява на хиляди ослепителни късове. През<br />
+очите ми струи светлина. Разкъсвам се отново и отново в шеметния бяг<br />
+през себе си. Отвъд. Навън. През себе си. Отвъд. Навън. През себе си.<br />
+</p>
+
+<p>
+Пр. Трябва да не спирам да умирам. Трябва. Да не спирам. x3<br />
+</p>
+
+<p>
+И всичките лица които срещам. Всички хора. Разговорите. Безкрайните<br />
+моменти траещи частица от секунда. Кимвания и мълчаливи<br />
+разминавния. Срещите случайни. Препускането подир дните. Ден подир<br />
+ден. Ден подир ден. Минутите се откъртват с оглушителен тътен от<br />
+стените на животите ни. И всичко се слива в едно. Калейдоскоп от<br />
+цветове преливащи един в друг. Пъстра река извиваща се<br />
+нагоре. Нагоре. Изчезваща. Нагоре. Изчезваща. И аз повлечен в<br />
+нея. Изчезващ. Сингулярност на съзнанието. Деление с нула. Взривен от<br />
+свръх-товар на сетивата.<br />
+</p>
+
+<p>
+Пр. Трябва да не спирам да умирам. Трябва. Да не спирам. x3<br />
+</p>
+
+<pre class="example">
+E | A# | A | Ab ]
+
+Pr.
+
+v x||||| vi x||||| vii x||||| ix x|||||
+  |x||||    |x||||     |x||||    |x||||
+  ||||||    ||||||     ||||||    ||||||
+</pre>
+
+<p>
+20130608<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org52faeb3" class="outline-2">
+<h2 id="org52faeb3"><span class="section-number-2">29.</span> Мечта</h2>
+<div class="outline-text-2" id="text-29">
+<p>
+(t:110 r:4/4)<br />
+</p>
+
+<p>
+Розово море, сини планини<br />
+човек с крила, с розови очи<br />
+Небе от цветя, стъпвам по звезди<br />
+пясък от любов - нашите души<br />
+</p>
+
+<p>
+Искам  да видя очите на  Малкия Принц<br />
+искам  да пипна небето  с ръка<br />
+Тогава,  тогава зная ще бъда  щастлив<br />
+ще бъда готов  да срещна  смъртта<br />
+</p>
+
+<p>
+Лилава тишина на капки се цеди<br />
+черна светлина, угаснали очи<br />
+Пясъчен часовник отмерва самота<br />
+безсмислени брътвежи на луда глава<br />
+</p>
+
+<p>
+Не искам да съм млад, не искам да съм стар<br />
+не искам да нося тежък товар<br />
+В свят на суета, угаснали мечти<br />
+усмивка на дете ще го промени<br />
+</p>
+
+<p>
+Искам  да видя очите на  Малкия Принц<br />
+искам  да пипна небето  с ръка<br />
+Тогава,  тогава зная ще бъда  щастлив<br />
+ще бъда готов  да срещна  смъртта<br />
+</p>
+
+<p>
+1994 г.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgadb6569" class="outline-2">
+<h2 id="orgadb6569"><span class="section-number-2">30.</span> Моя кристална сълза</h2>
+<div class="outline-text-2" id="text-30">
+<p>
+(t:105 r:4/4)<br />
+</p>
+
+<p>
+Разтварям те в утрото на  моята душа<br />
+С устни те попивам,  разливам се в нощта<br />
+Очите ми са влажни -  едва ли е от дъжда<br />
+Моя  кристална  сълза<br />
+</p>
+
+<p>
+До вчера окървавен, кре  щях срещу света<br />
+Мислех си да сложа край на  всичко това<br />
+Не знаех че има и  друга страна<br />
+Моя  кристална  сълза<br />
+</p>
+
+<p>
+Пр.  Мило момиче,  обичам те<br />
+     Искам да бъда до  теб<br />
+     Хей, мила,  обичам те<br />
+     Искам,  искам&#x2026;<br />
+</p>
+
+<p>
+Пясъкът в мидата ута  и се като здрач<br />
+Открих самотен остров и  малко топлина<br />
+Сто сърца ридаят, но е  дно отронва само<br />
+една  кристална  сълза<br />
+</p>
+
+<p>
+Сега когато сутрин прита  ен стоя до теб<br />
+дъхът ти ме отнася сред  маково поле<br />
+Щастлив съм да бъда  част от твоя сън<br />
+Моя  кристална  сълза<br />
+</p>
+
+<p>
+1997 г.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgce7fe12" class="outline-2">
+<h2 id="orgce7fe12"><span class="section-number-2">31.</span> Моята смърт</h2>
+<div class="outline-text-2" id="text-31">
+<p>
+(t:105 r:4/4)<br />
+</p>
+
+<p>
+A] x4<br />
+</p>
+
+<p>
+(ниско, разговорно)<br />
+ Моята смърт си  представям на пода<br />
+ във влажно мазе об  легнат до студена  стена<br />
+ поглед - втренчен в  нищото<br />
+ в ръката си - полу  пълна  бутилка държа<br />
+ Съдебния лекар  помирисва я и отси  ча<br />
+ "Хм,  мине  рална вода!"<br />
+ Аз ставам,  поглеждам го и му  стискам мъжки  ръката:<br />
+ "Така е, ти  май за малко да ме  отпишеш сега?"<br />
+</p>
+
+<p>
+(ниско)<br />
+ Всеки път ко  гато<br />
+тази  песен  изпявам  я<br />
+ аз по веднъж  умирам<br />
+и се пре  раждам  отново  дете<br />
+А ти не  гледай в бутилката, а слушай кога<br />
+песен  та ми ще спре<br />
+</p>
+
+<p>
+A] x4<br />
+</p>
+
+<p>
+(ниско, разговорно)<br />
+ Една сутрин на пода съ  будих се<br />
+ във влажно мазе  облегнат до  студена  стена<br />
+ Поглеждам наоколо и  к'во да видя?<br />
+ в ръката си полу  празна  бутилка държа<br />
+ Помирисвам я и  си казвам:<br />
+ "Хм,  Троянска  сливова -  няма шега!"<br />
+ А Свети Петър по  глежда ме и ми  стиска мъжки  ръка:<br />
+ "Така е, не  можеш цял живот  да караш на  минерална вода!"<br />
+</p>
+
+<p>
+(ниско)<br />
+ Всеки път ко  гато<br />
+тази  песен  изпявам  я<br />
+ аз по веднъж  умирам<br />
+и се пре  раждам  отново  дете<br />
+А ти не  гледай в бутилката, а слушай кога<br />
+песен  та ми ще спре<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgdb13813" class="outline-2">
+<h2 id="orgdb13813"><span class="section-number-2">32.</span> Моята София</h2>
+<div class="outline-text-2" id="text-32">
+<p>
+(r:145 t:4/4)<br />
+</p>
+
+<p>
+Моята София  фасове по паважа<br />
+и сивото  срещи на "Попа"<br />
+пияни  в 5 сутринта<br />
+на стълбите на площад "Македония"  посрещаме зората на града<br />
+бялото на деня ни ослепява  в задимен нощен клуб на площад "Левски"<br />
+моята София  "Сточна Гара"<br />
+изпращам я, пушим, градинка, тя  &#x2013; изгубена в мен<br />
+"Искам завинаги да останем така - чуваш ли!" - каза ми<br />
+и никога нищо не е същото<br />
+</p>
+
+<p>
+Пр. Да  живееш  значи да из  гаряш<br />
+    като ци  гарата в у  стата на  Бог<br />
+</p>
+
+<p>
+89-та  бунта, свободата,<br />
+"Петте кьошета" и "Прага"  "Борисова градина",<br />
+до "Синьото",  варим стаф в капачка от коняк<br />
+с лимонена киселина  и минерална вода<br />
+наркомани разтварят в кръвта си  разбитите си на прах мечти<br />
+по белезите те осъждат -  заради тях си още жив<br />
+</p>
+
+<p>
+Пр. Да  живееш  значи да из  гаряш<br />
+    като ци  гарата в у  стата на  Бог<br />
+</p>
+
+<p>
+1997-ма  "Клуб 703"<br />
+"Шишман" и "Билкова",  София<br />
+студените зими,  скитащите се крака<br />
+хората -  бледнеещи призраци<br />
+улици, улици, улици -  същите<br />
+червени стъпки остават  след тътрещите се нозе<br />
+Защо бръснарски ножчета пъплят под кожата ми когато те сънувам,  София?<br />
+Защо само с болката и сълзите си те свързвам,  България?<br />
+</p>
+
+<p>
+(високо)<br />
+Пр. Да  живееш  значи да из  гаряш<br />
+    като ци  гарата в у  стата на  Бог<br />
+</p>
+
+<pre class="example">
+
+  o          o
+v |x||||   v ||||||
+  ||||||     ||||||
+  ||||||     |x||||
+
+Пр: B5 A5 | Em Em |
+</pre>
+</div>
+</div>
+<div id="outline-container-org1fa02a6" class="outline-2">
+<h2 id="org1fa02a6"><span class="section-number-2">33.</span> На всички изгубени души - с любов</h2>
+<div class="outline-text-2" id="text-33">
+<p>
+(t:130 r:2/4 or 4/4)<br />
+</p>
+
+<p>
+Мразя хората които не  губят кон  трол<br />
+при които всичко е премерено точ  но<br />
+които своите чувства зад  броня държат<br />
+а лицата си крият зад каменни  плочи<br />
+</p>
+
+<p>
+Мразя всичко в живота зад ети  кет да сто  и<br />
+"работа", "семейство", "колега", "при  ятел"<br />
+мразя каквото се иска да правя от  9 до 5<br />
+а от 5 до 9 да не зная какво  искам<br />
+</p>
+
+<p>
+Мразя когато по пътя си  бодро вър  вя<br />
+когато всяка цел аз смело пос  тигам<br />
+химера е пътят, а твоята  цел - суета<br />
+да запазиш човека в теб и това  стига<br />
+</p>
+
+<p>
+ Да поставиш ред в живота си е  казват из  куство<br />
+ което владее всеки ус  пяващ човек<br />
+ несъмнено изкуство е ако за  теб успех е<br />
+да пос  тавиш всичко в изкуствен  ред<br />
+</p>
+
+<p>
+ Кажи кое в ред е на тази  черна зе  мя<br />
+ животът, парите ли, двата вехти па  гона?<br />
+ само звукът на сърцето е  сигурно в този миг<br />
+ако  още го чуваш - не го заглу  шавай<br />
+</p>
+
+<p>
+20091122<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8e41840" class="outline-2">
+<h2 id="org8e41840"><span class="section-number-2">34.</span> На баща ми</h2>
+<div class="outline-text-2" id="text-34">
+<p>
+(t:55 r:2/4)<br />
+</p>
+
+<p>
+(ниско)<br />
+</p>
+
+<p>
+(разложени)<br />
+ Баща ми вечер след  работа<br />
+сяда тежко до  масата<br />
+Тих, изморен, омър  лушен<br />
+ с ракия до горе  пълни си  чашата<br />
+</p>
+
+<p>
+(цели)<br />
+ Седя до баща ми при  тихнал<br />
+и той не проронва ни  дума<br />
+Тих, изморен, омър  лушен<br />
+ с ракия до горе  пълни си  чашата<br />
+</p>
+
+<p>
+(цели)<br />
+ Така, седели сме  двамата<br />
+вечер след вечер, го  дини<br />
+И съм се питал защо в мъл  чание, баща ми<br />
+ с ракия до горе,  пълни си  чашата<br />
+</p>
+
+<p>
+(разложени)<br />
+ Днес вечер сам сядам до  масата<br />
+а в тишината тегне едно мъл  чание<br />
+Тогава тих, изморен, омър  лушен<br />
+ с ракия до горе,  пълня си  чашата<br />
+</p>
+
+<p>
+20100127<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org4c31b8a" class="outline-2">
+<h2 id="org4c31b8a"><span class="section-number-2">35.</span> На Петър</h2>
+<div class="outline-text-2" id="text-35">
+<p>
+A' G F G<br />
+</p>
+
+<p>
+Смело стъпвай по пътя, сине<br />
+Той започва преди теб, продължава и след<br />
+Но тази част само твоя е, сине<br />
+Подари й сърцето си - тя е само за теб<br />
+</p>
+
+<p>
+Търси смисъла, сине<br />
+Светът го търси преди теб, ще го търси и след<br />
+Но само твоят смисъл важен е, сине<br />
+Подари му сърцето си - той е само за теб<br />
+</p>
+
+<p>
+Обичай пламенно, сине<br />
+Преди теб са обичали, ще обичат и след<br />
+Но една любов само твоя е, сине<br />
+Подари й сърцето си - тя е само за теб<br />
+</p>
+
+<p>
+Бързо изчезват минутите, сине<br />
+Тъй било е преди теб, ще бъде и след<br />
+Но тази минута само вечна е, сине<br />
+Запази я в сърцето си - тя е само за теб<br />
+</p>
+
+<p>
+20210731<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge90f0f8" class="outline-2">
+<h2 id="orge90f0f8"><span class="section-number-2">36.</span> Най-тъжната песен</h2>
+<div class="outline-text-2" id="text-36">
+<p>
+(t:65 r:4/4)<br />
+</p>
+
+<p>
+(разложени)<br />
+ Изпей ми най-тъжната песен,  приятелю<br />
+тих спомен нека притисне  сърцето ми<br />
+В следобеда, в който слънцето мине  зенита си<br />
+ не животът, а  смъртта вече  вика ни<br />
+</p>
+
+<p>
+ Изпей ми най-тъжната песен,  приятелю<br />
+Нека духът на едно време от  минало<br />
+затанцува в кръг пред очите ни  влажните<br />
+като  бели самодиви  около  кладенци<br />
+</p>
+
+<p>
+(цели)<br />
+ Пей, не спирай таз' тъжна песен,  приятелю<br />
+врагове реални и мними са вече заб  равени<br />
+измислени цели като миражи из  губват се<br />
+в песен  та ти отеква  на спомена  ехото<br />
+</p>
+
+<p>
+ Нека с твоята песен,  приятелю<br />
+си спомним за хора отдавна забраве  ни<br />
+Нека и те с нас приседнат край  огъня<br />
+На ду  шите ни те са  най-верни па  зители<br />
+</p>
+
+<p>
+(разложени)<br />
+ Помниш ли старата къща в  центъра<br />
+Там на трети етаж на прозоре  ца<br />
+малко момче залепило нос на стъ  клото е<br />
+гледа  право в теб &lt;пауза&gt;  с твоите  очи<br />
+</p>
+
+<p>
+(цели)<br />
+ А на стълбите долу през прашната  улица<br />
+двайсет годишен хлапак  седнал е<br />
+Пуши замислен и чака своята  среща -<br />
+мо  мичето с плитки и  дръзка  усмивка<br />
+</p>
+
+<p>
+(разложени-пауза 1,2,3 / цели 4)<br />
+ Помниш ли още онази це  лувка,<br />
+приглушения смях и шепота в  тъмното<br />
+Кому са нужни тези минути из  губени<br />
+(цели) Защо  помним мигове  несъщест  вували<br />
+</p>
+
+<p>
+(цели)<br />
+ Пей още най-тъжната песен,  приятелю<br />
+Нека спомени още притискат  сърцето ми<br />
+В този следобед едно слънце минава зе  нита си<br />
+и не  животът а  смъртта сякаш  вика ни<br />
+</p>
+
+<p>
+ И други слънца високо пак ще из  гряват<br />
+И много песни още ще бъдат на  писани<br />
+но само най-тъжната песен при  ятелю<br />
+ос  тава с нас  до края на  дните ни<br />
+</p>
+
+<p>
+20091019<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org63abef7" class="outline-2">
+<h2 id="org63abef7"><span class="section-number-2">37.</span> Не будете призраците когато спят</h2>
+<div class="outline-text-2" id="text-37">
+<p>
+(r:130 t:4/4)<br />
+</p>
+
+<p>
+В моменти като този  някога ти се  обаждах  &#x2026;  казвах  "Обичам те.",  чувах смеха ти от  другата стра  на -<br />
+хиляди  сребърни  камбани  &#x2026;  пеещи за  мене в  нощта  и  говорихме  дълго и  ти се смее  ше<br />
+														   и говорихме  дъл  го<br />
+</p>
+
+<p>
+И искаше от  ново да ти раз  казвам за  нас<br />
+Ти искаше и  аз раз  казвах<br />
+</p>
+
+<p>
+D] x2<br />
+ Ти - край мо  рето,  &#x2026;  с лунна  коса -  ореола на  Бендида<br />
+ с устни с  вкус на марма  лад,  &#x2026;.  с топлина на есенен  полъх  когато те пре  гръщам.<br />
+</p>
+
+<p>
+"Разкажи нашата  приказка!" ми  каза  ти.<br />
+"Разкажи!" и  аз раз  казвах<br />
+</p>
+
+<p>
+D] x2<br />
+ "Имало едно  момиче със лу  нички.  &#x2026;  То имало  една  надежда<br />
+ Надеждата му  била със  сини  очи -  приказен  герой бил от  песен  неизпята"<br />
+</p>
+
+<p>
+казах и те  целунах, а после -  тишина и  смях<br />
+и хиляди сребърни камбани  за пръв път  пееха за мен<br />
+</p>
+
+<p>
+D] x4<br />
+ Как съм днес,  питаш,  а аз  мълча.  Няма и  какво повече  да кажа.<br />
+ Смисъла  отдавна се  изгуби,  &#x2026;  като облак зад хори  зонта. зад хори  зонта на младос  тта ни.<br />
+</p>
+
+<p>
+По-хубаво ли е  мястото къ  дето си  сега?  по-черно ли е  там мо  рето?<br />
+Разказват ли  приказки  хората и  там? Питам те а  ти мъл  чиш.<br />
+</p>
+
+<p>
+D] x2<br />
+ В моменти като този  някога ти се  обаждах.  &#x2026;  казвах  "Обичам  те.".<br />
+ Ако сега беше  тогава  щях ли пак да  го направя?  не будете призра  ците когато  спят.<br />
+</p>
+
+<p>
+По-хубаво ли е  мястото къ  дето си  сега?  По-бяло ли е  там мо  рето?<br />
+Разказват ли  приказки  хората и  там? Не будете призра  ците когато  спят<br />
+</p>
+
+<p>
+20101010<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga91a6d5" class="outline-2">
+<h2 id="orga91a6d5"><span class="section-number-2">38.</span> Не се връщай</h2>
+<div class="outline-text-2" id="text-38">
+<p>
+(t:95 r:2/4)<br />
+</p>
+
+<p>
+1-2-3-4-1-2 |  1-2-3-4 |  1-2-3-4-1-2-3-4<br />
+"Не се връщай!", гласа на баща ми  е  далечен<br />
+сякаш ни дели не океан, а  цяла  Вселена<br />
+"Не се връщай!" думите при ти  скат сър  цето<br />
+с тежестта на на  шето  време.<br />
+</p>
+
+<p>
+Това бе тяхно  то  наследство -<br />
+времето, в което не си добре  дошъл  у дома.<br />
+"Не се връщай!" като мълчание на  пана  хида.<br />
+последно сбогом по без  крайния  път<br />
+</p>
+
+<p>
+Както  капка по капка се  пречиства  ракията<br />
+и във  времето лошия  спомен не остава  следа<br />
+ малката, мръсна и  тъжна България през  годините<br />
+бе  станала изгубения  рай на младост  та<br />
+</p>
+
+<p>
+И се улавяш, че съ  нуваш на  яве<br />
+как се завръщаш към тази да  лечна  земя<br />
+където себе си някога  беше ос  тавил<br />
+за да търсиш себе си да  леч по  света<br />
+</p>
+
+<p>
+"Сине, онази България от  давна я  няма"<br />
+"Тя е само в твои  те меч  ти"<br />
+"Но сам казваше, татко, че меч  тите са  всичко<br />
+за което си струва да се бо  рим,  нали?"<br />
+</p>
+
+<p>
+"Не се връщай!" пов  таря ба  ща ми<br />
+Но сърцето друго шеп  неше в  мен<br />
+И понякога сърце  то пе  чели<br />
+Сърцето печели, дори когато  губиш  ти<br />
+</p>
+
+<p>
+Както  капка по капка се  пречиства  ракията<br />
+и във  времето лошия  спомен не остава  следа<br />
+ малката, мръсна и  тъжна България през  годините<br />
+бе  станала изгубения  рай на младост  та<br />
+</p>
+
+<pre class="example">
+
+     ooo         o        ooo
+i ||||||  i ||||||   i ||||||
+  ||x|||    ||x|||     |xx|||
+  |x||||    |x||x|     ||||||
+</pre>
+
+<p>
+20140907<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgadf4c83" class="outline-2">
+<h2 id="orgadf4c83"><span class="section-number-2">39.</span> Непреходно за Прехода</h2>
+<div class="outline-text-2" id="text-39">
+<p>
+(t:130 r:4/4)<br />
+</p>
+
+<p>
+Имало едни хора които  40 години<br />
+копали земята да правят завод<br />
+На 40-тата рекли:  "Стига! Не става!"<br />
+и сами скочили в пресния ров<br />
+</p>
+
+<p>
+Започнали тогава от дъл  боката яма<br />
+стълба към синьото небе да градят<br />
+Стъпало по стъпало е  дин се изкачвал,<br />
+а сто други го повличали обратно в калта<br />
+</p>
+
+<p>
+Минало време - оце  лели, живели,<br />
+яли и пили, сами себе си крали и били<br />
+На 20-тата година едни  други им рекли<br />
+"Елате при нас!" и им подали ръка<br />
+</p>
+
+<p>
+Подадената ръка онези от  дупката взели,<br />
+взели и всичко що можела тя да даде<br />
+И седнали Нагли, Недосе  гаеми и Факири<br />
+с пипалата на октопода взетото да делят<br />
+</p>
+
+<p>
+На гладен човек да подаваш  ръка е опасно,<br />
+защото гладен човек за човека е звяр<br />
+Да закараш кон до во  дата е лесно,<br />
+да го накара да пие не може дори и коняр<br />
+</p>
+
+<p>
+Така върти се света от  както го има -<br />
+едни копаят дупки, други стълби градят,<br />
+едни подават ръка, a други  с две ръце взимат,<br />
+едни надават вой, докъто други мълчат<br />
+</p>
+
+<p>
+20100413<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org99b437e" class="outline-2">
+<h2 id="org99b437e"><span class="section-number-2">40.</span> Нищо лично</h2>
+<div class="outline-text-2" id="text-40">
+<p>
+(t:140 r:4/4)<br />
+</p>
+
+<p>
+Aз нямам  нищо  лично към тебе<br />
+ти ми по  магаш да си по  стигна целта<br />
+аз правя  същото за  тебе<br />
+практични пра  вила на  проста игра<br />
+</p>
+
+<p>
+ Вечер се прибираме в ква  дратните си стаи<br />
+и зад  спуснати завеси и без свет  лина<br />
+ пак си напомняме да  не забравим<br />
+че  плачем от радост, а не от  тъгa<br />
+</p>
+
+<p>
+Aз нямам  нищо  лично към тебе<br />
+ти ми по  магаш да си по  стигна целта<br />
+аз правя  същото за  тебе<br />
+така към без  краен прогрес се  движи све  а<br />
+</p>
+
+<p>
+ Вечер търсим по-дългата стра  на на квадрата<br />
+с тол  кова сме по-близо и днес до цел  та<br />
+ а по бузата белезникава  диря проблясва<br />
+и уж  плачем от радост, а не от тъ  гa<br />
+</p>
+
+<p>
+Aз нямам  нищо  лично към тебе<br />
+ти ми по  магаш да си по  стигна целта<br />
+аз правя  същото за  тебе<br />
+практични пра  вила на  проста игра<br />
+</p>
+
+<p>
+ Вечер се прибираме в ква  дратните си стаи<br />
+и зад  спуснати завеси и без свет  лина<br />
+ пак си напомняме да  не забравим<br />
+че  плачем от радост, а не от  тъгa<br />
+</p>
+
+<p>
+20100910<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7acce64" class="outline-2">
+<h2 id="org7acce64"><span class="section-number-2">41.</span> Обичах те, мила (преди да свърша)</h2>
+<div class="outline-text-2" id="text-41">
+<p>
+(t:105 r:4/4) (разложени)<br />
+ Отиде си, мила а след  теб<br />
+ слънцето из  гря<br />
+ Обичам те,  мила<br />
+ когато те  няма<br />
+</p>
+
+<p>
+(t:155 r:4/4)<br />
+ Обичах те,  мила<br />
+ преди да  свърша<br />
+ преди да свърша,  мила<br />
+ да те о  бичам<br />
+</p>
+
+<p>
+(t:105 r:4/4) (разложени)<br />
+ Когато стана на 64,  мила<br />
+ пак ще те о  бичам<br />
+ Защото ще зная,  мила<br />
+ че можеше още да си  тук<br />
+</p>
+
+<p>
+(t:155 r:4/4)<br />
+ Обичах те,  мила<br />
+ преди да  свърша<br />
+ преди да свърша,  мила<br />
+ да те о  бичам<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb285cad" class="outline-2">
+<h2 id="orgb285cad"><span class="section-number-2">42.</span> От кал</h2>
+<div class="outline-text-2" id="text-42">
+<p>
+(t:120 r:2/4)<br />
+</p>
+
+<p>
+Човек про  паднал в калта до  пътя<br />
+до  бър човек но беше се про  пил<br />
+ Лекаря лекува го с ре  цепти<br />
+"Изле  кувай себе си от болестта Живот", крещеше онзи<br />
+и остана да лежи в кал  та Am G]<br />
+</p>
+
+<p>
+Човек про  паднал в калта до  пътя<br />
+с до  бро сърце - продаде го за  спирт<br />
+Све  щенника лекува го с мо  литви<br />
+"Няма  прошка за греха да си човек", прошепна онзи<br />
+и остана да лежи в кал  та Am G]<br />
+</p>
+
+<p>
+Човек про  паднал в калта до  пътя<br />
+онзи  същия от първия куп  лет<br />
+чен  гето лекува го с  юмруци<br />
+"Махни  гредата от своето око", изстена онзи<br />
+и остана да лежи в кал  та Am G]<br />
+</p>
+
+<p>
+Човек про  паднал в калта до  пътя<br />
+ми  нава друг - подава му  ръка<br />
+ "Бил съм вече тук - ще ти по  могна!"<br />
+а  този пък, а този пък оказа се&#x2026;<br />
+гро  бар<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1fbfd39" class="outline-2">
+<h2 id="org1fbfd39"><span class="section-number-2">43.</span> Патриотична</h2>
+<div class="outline-text-2" id="text-43">
+<p>
+(r:115 t:2/4)<br />
+</p>
+
+<p>
+(цели)<br />
+ "Ние ще спасиме България",  казваш<br />
+  "Пак ли?", те питам уж на  шега<br />
+ "За нас", гордо и с вяра  отвръщаш<br />
+ "За наш'то поколение  ще бъде само  веднъж!"<br />
+</p>
+
+<p>
+И искрите в очите и вярата ти стопля  сърцето<br />
+ Ех, как искам да повярвам   и аз<br />
+Но късно е, на друга гара аз  слязох<br />
+а влакът, едва спрял,  без мен   продължи<br />
+</p>
+
+<p>
+И късно е  вече в  идеали да вярваме<br />
+Зарът е хвърлен,  монетата пада  веднъж<br />
+Човек няма  време втори  път да залага<br />
+България нас не спаси - а ние нея дали ще  спасим<br />
+</p>
+
+<p>
+(цели)<br />
+ Обичам родината недей ме разбира  погрешно,<br />
+  но в държавата си се чувствам чужденец   у дома<br />
+ Един език говорим, а както брега  с морето -<br />
+ един в друг преливаме,  един от друг   се делим<br />
+</p>
+
+<p>
+Някога вярвах и рисувах чудни  картини<br />
+ с червени, сини и разноцветни   бои<br />
+Някога вярвах - дори и в това днес не  вярвам<br />
+всичко бе в черно  щом отворих   очи<br />
+</p>
+
+<p>
+(1,2-разложени,пауза; 3,4-цели)<br />
+ Отдавна България аз оставих  на нея,<br />
+  остави и тя мен, мен на   света<br />
+ Както човек съдбата си сам не  избира<br />
+ Тъй нито България - аз,  нито тя мене   избра<br />
+</p>
+
+<p>
+(цели)<br />
+ В България не, но в твоята вяра аз  вярвам<br />
+  За нея къс от сърцето си бих   разменил<br />
+ България не, но от кръвта си бих дал  ако трябва<br />
+ за да мога тебе  и тебе и теб да   спася<br />
+</p>
+
+<p>
+Пр.<br />
+</p>
+
+<p>
+20111020<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2a3d8cc" class="outline-2">
+<h2 id="org2a3d8cc"><span class="section-number-2">44.</span> Парцалени кукли</h2>
+<div class="outline-text-2" id="text-44">
+<p>
+(t:120 r:4/4)<br />
+</p>
+
+<p>
+ Нощем ко  гато навън  вятър шу  ми<br />
+а  ти в сладък  сън си за  творил о  чи<br />
+ някой в  твоята  стая не  спи<br />
+до  вратата в  ъгъла  някой шеп  ти<br />
+</p>
+
+<p>
+Пар  цалени  кукли на  пръсти при  стъпват<br />
+ стъпка по  стъпка в  танц се за  въртат<br />
+и  само но  щта под своя  черен во  ал<br />
+ единствен ням  зрител на  среднощния  валс<br />
+</p>
+
+<p>
+ Утре ко  гато нас  тъпи нов  ден<br />
+и  ти от  ново по  емеш на  пред<br />
+до  вратата в  ъгъла  някой ще  спи<br />
+а  ти и де  нят ти от съ  ня му сте  миг<br />
+</p>
+
+<p>
+Пар  цалени  кукли на  пръсти при  стъпват<br />
+ стъпка по  стъпка в  танц се за  въртат<br />
+и  само но  щта под своя  черен во  ал<br />
+ единствен ням  зрител на  среднощния  валс<br />
+</p>
+
+<pre class="example">
+Куплет:
+
+
+v |||xxx   v |||||x    vi ||||x|   vii ||x|||
+  ||||||     ||||x|       |||x||       ||||x|
+  ||x|||     |||x||       ||x|||       |||x||
+
+Припев:
+
+
+vi ||||x|   v |||xxx  iii ||||x|     i ||||x|
+   |||x||     ||||||      |||x||       |||x||
+   ||x|||     ||x|||      ||x|||       ||x|||
+</pre>
+</div>
+</div>
+<div id="outline-container-orgc642049" class="outline-2">
+<h2 id="orgc642049"><span class="section-number-2">45.</span> Песен за един добър непознат</h2>
+<div class="outline-text-2" id="text-45">
+<p>
+(t:130 r:4/4)<br />
+</p>
+
+<p>
+През живота ми раз  лични хора  в мен  живяха<br />
+всеки с мисли раз  лични и с раз  лични  лица<br />
+Всеки тво  реше, гра  деше, ру  шеше<br />
+всеки след  себе си ос  тави  следа<br />
+</p>
+
+<p>
+Един само през цялото  време мълчеше -<br />
+не написа ни ред, ни камък връз  камък сгра  ди<br />
+Мислеше, чувстваше и пак мъл  чеше<br />
+роден непознат - непоз  нат ще ум  ре<br />
+</p>
+
+<p>
+През живота ми раз  лични хора  в мен  живяха<br />
+всеки с мисли раз  лични и с раз  лични  лица<br />
+Всеки тво  реше, гра  деше, ру  шеше<br />
+всеки след  себе си ос  тави  следа<br />
+</p>
+
+<p>
+Един само през цялото  време мълчеше -<br />
+не написа ни ред, ни камък връз  камък сгра  ди<br />
+Мислеше, чувстваше и пак мъл  чеше<br />
+непознат дойде и непознат ще си тръгне -<br />
+			това съм  аз може  би<br />
+</p>
+
+<pre class="example">
+Куплет:
+
+
+   ooo  o  oo    o o   oo o
+|||||| |||||| ||||x| ||||||
+|xx||| ||xx|| ||x||| ||||||
+|||||| |||||| |||||| ||||x|
+
+Припев:
+
+
+|||||x |||||| ||||xx ||||x|
+|||x|| |||||| |||x|| ||xx||
+||||x| |||||x ||x||| ||||||
+</pre>
+
+<p>
+20100106<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf949da9" class="outline-2">
+<h2 id="orgf949da9"><span class="section-number-2">46.</span> Песен за китарата</h2>
+<div class="outline-text-2" id="text-46">
+<p>
+(t:125 r:4/4)<br />
+</p>
+
+<p>
+Китарата,  която  казва това което ти не смееш<br />
+Китарата,  която  попива сълзите ти когато не плачеш<br />
+Китарата,  която  умее да сънува<br />
+дори  когато ти не  можеш да заспиш<br />
+</p>
+
+<p>
+Вземи тази  песен<br />
+тя е всичко което  мога да ти дам<br />
+С нея пронизвай тиши  ната<br />
+а когато свърши -  предавай я на  татък<br />
+</p>
+
+<p>
+Китарата,  която  ти подава ръка когато се препънеш<br />
+Китарата с шест  вени,  които кървят когато твоите изсъхват<br />
+Китарата,  която ужи  вява всеки миг<br />
+когато ти по  малко  умираш<br />
+</p>
+
+<p>
+Вземи тази  песен<br />
+тя е всичко което  мога да ти дам<br />
+С нея пронизвай тиши  ната<br />
+а когато свърши -  предавай я на  татък<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbca16fd" class="outline-2">
+<h2 id="orgbca16fd"><span class="section-number-2">47.</span> Песен за малиновата долина</h2>
+<div class="outline-text-2" id="text-47">
+<p>
+(t:130 r:4/4)<br />
+</p>
+
+<p>
+Преди време минах през  малиновата долина,  нашата малинова  долина<br />
+Спрях се  пред онзи двор,  къщата още  беше там<br />
+Помниш ли я?  Онази същата,  в която ние  двамата<br />
+за пръв път  стоплихме  най-студената  Декемврийска нощ<br />
+</p>
+
+<p>
+Още е там.  Но не е същата  стените като бръчки  напукани<br />
+по лицето на  старица  прозорците като  очите й<br />
+някога светли и живи  отразяващи  на небето  синьото<br />
+днес черни,  затворени,  склопени в покой  завинаги<br />
+</p>
+
+<p>
+Спомних си една от онези  сутрини,   събудих се а теб те  нямаше<br />
+В празната стая  внезапно  почувствах най-страшната  самота<br />
+Но отново гласът ти ме  стопли  като лъчите на  слънцето<br />
+Тогава подари ми  розата  "красива като любовта ни е!"  каза ми<br />
+</p>
+
+<p>
+Прегърнах те, а  бодлите й  се забиха дълбоко  в ръката ми<br />
+Един червен цвят се  отчупи,   смеси се с кръвта  алена<br />
+Болката не усетих  тогава -  само устните ти върху  моите<br />
+Болката не усетих  тогава -  само топлината на  ръцете ти<br />
+</p>
+
+<p>
+Преди време минах през  малиновата долина,  нечия малинова  долина<br />
+Спрях пред една  къща,  постоях насред един  изоставен двор<br />
+Нечии, но не  нашите,  всичко - променено  завинаги<br />
+само розата още  бе  там  едва сега ме прониза от бодлите й  болката  (х2)<br />
+</p>
+
+<pre class="example">
+
+ o  oo      oooo         o      oooo
+||||||    ||||||    ||||x|    ||||||
+||xx||    |x||||    |||x||    |x||||
+||||||    x|||||    ||x|||    x|||||
+||||||    ||||||    ||||||    ||||||
+</pre>
+
+<p>
+20110309<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org236681f" class="outline-2">
+<h2 id="org236681f"><span class="section-number-2">48.</span> Песен за София</h2>
+<div class="outline-text-2" id="text-48">
+<p>
+(t:135 r:4/4)<br />
+</p>
+
+<p>
+(Riff)<br />
+ София, мразя те  със  сиви па  вета<br />
+с булe  вардите сиви  на  вътре към  мен<br />
+с  надпис "Дъга"  и  "Аз, Вио  лета!"<br />
+с  шепи стърчащи  от  всички ъ  гли<br />
+</p>
+
+<p>
+(Chords)<br />
+ С един патриарх в сре  дата събиращ ни<br />
+де  ца на един  бог неразбран<br />
+с недо  волните пънкове  там до "Култура"-та<br />
+с нарко  мански сeнки и  празни, празни  лица<br />
+</p>
+
+<p>
+(Riff)<br />
+ София, мразя те,  сто  пъти про  клинам те<br />
+и сто  пъти отново  се  връщам при  теб<br />
+Защото  дърво  с цве  тове но без  корени<br />
+сто  пъти по-зло е  от  мразещ, но с  вяра човек<br />
+</p>
+
+<p>
+(Chords)<br />
+ С един патриарх в сре  дата събиращ ни<br />
+де  ца на един  бог неразбран<br />
+с недо  волните пънкове  там до "Култура"-та<br />
+с нарко  мански сeнки и  празни лица<br />
+</p>
+
+<p>
+ София, мразя те с нафта  линена пролет<br />
+с херо  инови сънища и бо  гатите нови<br />
+с олим  пийски надежди и  екранни герои<br />
+с  море от любов и водо  пади от кал<br />
+</p>
+
+<p>
+Малко сме и  оставаме<br />
+Малко сме и  оставаме<br />
+Малко сме и  оставаме<br />
+Малко сме и не  останахме<br />
+</p>
+
+<pre class="example">
+C D A C D]
+
+Riff: A | C | D | E | G ]
+
+
+||||||
+|||x||
+||||x|
+</pre>
+</div>
+</div>
+<div id="outline-container-org33f37dc" class="outline-2">
+<h2 id="org33f37dc"><span class="section-number-2">49.</span> По мъжки</h2>
+<div class="outline-text-2" id="text-49">
+<p>
+(r:140 t:4/4)<br />
+</p>
+
+<p>
+жени ни посрещат,  жени ни изпращат<br />
+през целия път  вървим след жени<br />
+в жената умираш,   в жената се раждаш<br />
+в поредната виждаш   всички преди<br />
+</p>
+
+<p>
+кажи ми здравей, по  дари ми усмивка,<br />
+още една нощ  при мен остани<br />
+преди това а и после  от теб се отричам (M)<br />
+когато не сме заедно сме  просто сами (M)<br />
+</p>
+
+<p>
+и от  ново обеш  таваш<br />
+че този  е последен  път<br />
+но без  време осъзна  ваш<br />
+пак виждаш  себеси в  някои  друг<br />
+</p>
+
+<p>
+ за жените воюваме, за же  ните умираме<br />
+ а много по-прости са  тези неща<br />
+ не да умреш а да жи  вееш си струва<br />
+да жи  вееш си струва за  тази жена<br />
+</p>
+
+<p>
+кажи ми здравей, по  дари ми усмивка,<br />
+още една нощ  при мен остани<br />
+преди това а и после  от теб се отричам (M)<br />
+когато не сме заедно сме  просто сами (M)x<br />
+</p>
+
+<p>
+и от  ново обеш  таваш<br />
+че този  е последен  път<br />
+но без  време осъзна  ваш<br />
+пак виждаш  себеси в  някои  друг<br />
+</p>
+
+<p>
+20091003<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6742ad3" class="outline-2">
+<h2 id="org6742ad3"><span class="section-number-2">50.</span> Последен Завет</h2>
+<div class="outline-text-2" id="text-50">
+<p>
+(r:130 t:4/4)<br />
+</p>
+
+<p>
+Чувстваш се  сам, като  някога преди,<br />
+Като  дете.  Сам.<br />
+Изоставен.  &#x2026;  Преди смъртта.<br />
+Преди последната  болка,  преди смъртта<br />
+</p>
+
+<p>
+И мислиш за  отминали  години<br />
+За времето  когато си  дете<br />
+За стари  приятели,  за хора отдавна не сред<br />
+нас и  страхът пак те  сковава<br />
+</p>
+
+<p>
+И хората те  плашат.  Човешкото по-страшно е дори<br />
+от  вълчи  зъби<br />
+И няма  изход и  не можеш да избягаш,<br />
+защото  хората  си ти<br />
+</p>
+
+<p>
+Белобради  Соломоне,  защо ти е познание и<br />
+мъдрост,  когато  живееш сред вълци?<br />
+Безмислие?  Безмислие.  Безмислие&#x2026;<br />
+Защо  ооо   оооо?<br />
+</p>
+
+<p>
+Тъга.  Тъга.  Тъга.<br />
+Като  дъжда  навън.<br />
+Като ручеи  от спомени  са капките.<br />
+Ка  то  сълзи.<br />
+</p>
+
+<p>
+Като твоите  очи,  когато те целувам<br />
+когато плувам в  косите ти,  когато те целувам<br />
+Вземи  ръката ми и  нека да вървим<br />
+нататъка,  навътре,  нататък<br />
+</p>
+
+<p>
+В кървавия  залез  нека да се срещнем<br />
+защото аз и  ти -  ние сме едно<br />
+Да си вземем последно  сбогом с  този дрипав свят<br />
+Застинали.  Завинаги.  Красиви. Вечни.<br />
+А след нас  ще остане  последен завет:<br />
+Дори да изгориш виж  слънцето  за миг поне } х3<br />
+</p>
+
+<pre class="example">
+Куплет
+
+
+   oo      o oo     o  oo     o  ooo
+||||||    ||||||    ||||||    ||||||
+||||||    ||||||    ||||||    ||||||
+|x||||    ||||||    ||||||    ||||||
+||||||    ||||||    ||||||    ||||||
+
+Припев
+
+
+	   o
+||||||    ||||||    ||||||    ||||||
+||||||    ||||||    |xx|||    |xx|||
+|x||||    ||||||    ||||||    ||||||
+||||||    ||||||    ||||||    |||x||
+||x|||    ||x|||
+</pre>
+
+<p>
+20101108<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8b4306d" class="outline-2">
+<h2 id="org8b4306d"><span class="section-number-2">51.</span> Почти</h2>
+<div class="outline-text-2" id="text-51">
+<p>
+(t:110 r:2/4)<br />
+</p>
+
+<p>
+(разложени*)<br />
+ Вземи органи  заторските си  сподобно  сти<br />
+ умението ти  да работиш в екип  на ревера си  закачи<br />
+ постави ги  другите  в малкия си  джоб<br />
+ и тръгни да завла  дяваш  света<br />
+</p>
+
+<p>
+(разложени*)<br />
+ Бъди един  нов Наполе  он  бъди<br />
+ един  нов  Колумб  стани<br />
+ през деня от  кривай за  губената си  Америка<br />
+ а noщем "Как да  мислим пози  тивно" чети<br />
+</p>
+
+<p>
+(цели)<br />
+ А по време на припева  не ме питай,  приятелю<br />
+ кой от твоите сънища  натрупа  пари<br />
+ Аз зная само, че да  сънуваш е  хуyy  баaa  воoo<br />
+ но от сладките сънища на  сутринта  главата боли<br />
+</p>
+
+<p>
+(разложени*)<br />
+ Какво успя да  заделиш в  банка  та<br />
+ стигат ли  вече за  нова  кола<br />
+ къща,  сватба,  години за  пенсия<br />
+ и ето -  почти  щастие е това<br />
+</p>
+
+<p>
+(разложени*)<br />
+ Ех, в  "почти"-то  скрит е  дявола<br />
+ но не  мисли  сега за  това<br />
+ здрав, млад и  интелигентен си -  не му е сега  времето<br />
+ да се питаш  защо "почти" е  всичко това<br />
+</p>
+
+<p>
+(цели)<br />
+ А по време на припева  не ме питай,  приятелю<br />
+ кой от твоите сънища  натрупа  пари<br />
+ Аз зная само, че да  сънуваш е  хуyy  баaa  воoo<br />
+ но от сладките сънища на  сутринта  главата боли<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org3baba7a" class="outline-2">
+<h2 id="org3baba7a"><span class="section-number-2">52.</span> Празни мисли</h2>
+<div class="outline-text-2" id="text-52">
+<p>
+(t:105 r:4/4)<br />
+</p>
+
+<p>
+Мисля си че би било  чудесно<br />
+всичко което  притежавам<br />
+да затворя  в черупка<br />
+да се скитам  като охлюв<br />
+да усещам  света с  пипала<br />
+</p>
+
+<p>
+Мисля си че би било пре  кра  сно<br />
+да живея в неонов  гра-a-a-  -a-a-д<br />
+със свете  щи комини<br />
+с хора  от гирлянди<br />
+където  всичко е светли  на<br />
+</p>
+
+<p>
+Но уви сега съм тук и  съм  аз<br />
+белодробни спомени от  ли  тат<br />
+Мащехите  се обесват<br />
+Истинските  полудяват<br />
+всичко е то  ва което  е<br />
+</p>
+
+<pre class="example">
+E         Gb      D          B       A
+|||x|| ii xxxxxx  ||||||  ii |||||x  ||||||
+|xx|||    |||x||  |||x|x     ||||||  ||xxx|  ||||||
+||||||    |xx|||  ||||x|     ||xxx|  ||||||  ||||||
+</pre>
+
+<p>
+19971226<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga3e30c7" class="outline-2">
+<h2 id="orga3e30c7"><span class="section-number-2">53.</span> Приспивна песен (До поискване)</h2>
+<div class="outline-text-2" id="text-53">
+<p>
+(t:130 r:4/4))<br />
+</p>
+
+<p>
+(текст: Деян Енев)<br />
+</p>
+
+<p>
+(разложени)<br />
+ Спете, тъжни пияндури с  тъжни сребърни  бради,<br />
+ в своите къщи от картон, в  своите графства  от кашони.<br />
+ Но преди това с канап за  шийте споме  ните и<br />
+ колета изпратете на а  дрес – когато  бяхме млади<br />
+</p>
+
+<p>
+(цели)<br />
+ Спете, мънички гаврошовци  там, в чакалня  та на гарата,<br />
+ там, в чакалнята Бъл  гари  я.<br />
+ Луничави Мечо Пуховци без бе  лежници и  чанти.<br />
+ И Алиси босоноги с пандел  ки от глад и  бой.<br />
+</p>
+
+<p>
+(цели)<br />
+ Влаковете тук не  спират. Но полицията –  да.<br />
+ спомените изпра  тете до поискване, Европа,  Брюксел.<br />
+</p>
+
+<p>
+(разложени)<br />
+ Спете, перловски гвардейци,  спете, сини  наркомани<br />
+ по градинки и мазета,  по „Дондуков”  и „Царя”,<br />
+ с вени като лунен лъч.  Музика, лъ  чи и тръни.<br />
+ Спете, луди и невинни,  спете, бедни  и сакати.<br />
+</p>
+
+<p>
+(цели)<br />
+ В пунктовете за хартия  вчера на „Доспат”, „Шиш  ман” и „Тунджа”<br />
+ Достоевски го приемаха за  осем ст'инки  на кило.<br />
+ Спете, бледи пеперуди  с разтворени  крака,<br />
+с карам  филови обятия, с бого  родички на  шията.<br />
+</p>
+
+<p>
+(цели)<br />
+ Влаковете тук не  спират. Но полицията –  да.<br />
+ спомените изпра  тете до поискване, Европа,  Брюксел.<br />
+</p>
+
+<pre class="example">
+
+ o  oo 
+|||||| 
+||xx|| 
+|||||| 
+</pre>
+
+<p>
+20130605<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org6852107" class="outline-2">
+<h2 id="org6852107"><span class="section-number-2">54.</span> Прошка</h2>
+<div class="outline-text-2" id="text-54">
+<p>
+Защо не идваш в съня ми<br />
+Не успяхме да си кажем сбогом знам<br />
+Моля те, опитай се прости ми<br />
+Ако ме чуваш някъде от там<br />
+</p>
+
+<p>
+Десетки пъти ме изпраща<br />
+По пътищата прашни на света<br />
+В деня, в който ти замина<br />
+Дори да ти помахам не успях<br />
+</p>
+
+<p>
+Пр.<br />
+	Сбогом, ако ме чуваш прости<br />
+	Гласът ти в мене звучи<br />
+	Сбогом, кажи че си там<br />
+	Щом те помнят те има аз знам<br />
+</p>
+
+<p>
+Светът отдавна не е същия<br />
+Не съм го знаел никога без теб<br />
+Времето болката поглъща<br />
+но как щом времето спря с теб<br />
+</p>
+
+<p>
+Недей да идваш в съня ми!<br />
+Не казвай сбогом - замълчи!<br />
+Без сбогом не сме се разделили<br />
+Все още си до мен, нали?<br />
+</p>
+
+<p>
+Пр.<br />
+</p>
+
+<p>
+Куплет<br />
+</p>
+
+<pre class="example">
+Bm        Bm'       Gm'       Gmb'
+	   o            
+||||||    ||||||    ||||||    ||||||
+|||||x    |||||x    ||||||    ||||||
+||||x|    ||||x|    ||||x|    x|||x|
+||xx||    ||xx||    x|xx||    ||xx||
+</pre>
+
+<p>
+Припев<br />
+</p>
+
+<p>
+Bm A Gm Gmb<br />
+</p>
+
+<p>
+20220306<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org8467912" class="outline-2">
+<h2 id="org8467912"><span class="section-number-2">55.</span> П.С. Ще се видим отвъд</h2>
+<div class="outline-text-2" id="text-55">
+<p>
+(t:130 r:4/4)<br />
+</p>
+
+<p>
+Затворен сам в  корема на  рибата<br />
+дишаш пак с  чужди хриле<br />
+Празни строфи  като мехури  издигат се<br />
+над океана  на времето<br />
+</p>
+
+<p>
+Страх те е от смъртта  нали?<br />
+Изчезваш. Някога бил  ли си?<br />
+Безсмъртието на  думите -<br />
+последен подслон.  Суета.<br />
+</p>
+
+<p>
+Опитваш да  осмислиш  нищо  то<br />
+умираш за по  реден  път<br />
+Погубва те  сянката и  пак се пре  раждаш<br />
+Послепис: ще се  видим от  въд<br />
+</p>
+
+<p>
+Страх те е от смъртта  нали?<br />
+Изчезваш. Някога бил  ли си?<br />
+Безсмъртието на  думите -<br />
+последен подслон.  Суета.<br />
+</p>
+
+<p>
+20110610<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb4263b5" class="outline-2">
+<h2 id="orgb4263b5"><span class="section-number-2">56.</span> Рапсодия в бяло</h2>
+<div class="outline-text-2" id="text-56">
+<p>
+(t:140 r:4/4)<br />
+</p>
+
+<p>
+Видения на голото ти  тяло<br />
+ме преследват цяла  нощ<br />
+Неочаквано забравени  изплуват<br />
+зад празните минути на  деня<br />
+</p>
+
+<p>
+Разбиват света ми на  парчета<br />
+като сноп разпилени  коси<br />
+върху очите ми и пак така  внезапно<br />
+се скриват зад отлитащия  миг<br />
+</p>
+
+<p>
+Две статуи с перлени  зъби<br />
+разкъсваме душите си със  страст<br />
+само думи казваш, но недей да ме  съдиш<br />
+истината е на тяхна  страна<br />
+</p>
+
+<p>
+Питам се остава ли  частица<br />
+покълнала в другия от  нас<br />
+и зная това е въпрос без  смисъл<br />
+единствената реалност е  сега<br />
+</p>
+
+<p>
+Любовта е пламък който  топли<br />
+студентите прострнства на  света<br />
+Когато е на пътя ти вземи  го, но знай<br />
+единствената реалност е  сега<br />
+</p>
+
+<p>
+Тъй свършва тази рапсодия в  бяло<br />
+разкъсахме душите си със  страст<br />
+За тези думи един ден ще бъда  осъден<br />
+но истината е на наша  страна<br />
+</p>
+
+<p>
+20120603<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org7a03573" class="outline-2">
+<h2 id="org7a03573"><span class="section-number-2">57.</span> С мълчание до края</h2>
+<div class="outline-text-2" id="text-57">
+<p>
+(r:130 t:4/4)<br />
+</p>
+
+<p>
+(single string)<br />
+ Не вярвам вече в  сълзи<br />
+ и в смъртта не вяр  вам<br />
+ Не вярвам в отчаянието  ми<br />
+ и в лудостта не  вярвам<br />
+</p>
+
+<p>
+(sept chords 5)<br />
+ Не вярвам, че ще мога<br />
+ да дам сърцето си отново<br />
+ Да се вживея дори не мога<br />
+ до стената с бутилка в ръка<br />
+</p>
+
+<p>
+(sept chords 5)<br />
+ И във вживяването не вярвам<br />
+в роман  тизма на бунта не вярвам<br />
+И в  клетвите не вярвам<br />
+в  срязаните вени не вярвам<br />
+</p>
+
+<p>
+(sept chords 5)<br />
+ Поглеждам те и ме обзема  страх -<br />
+ огромно е разтоянието между  нас<br />
+ По-бързо с мълчание ще стигна до  края<br />
+ отколкото с  думи до  теб<br />
+</p>
+
+<p>
+(single string)<br />
+ Моето момиче си  ти<br />
+ което и да  си<br />
+(sept chords 5)<br />
+ Както те създам,  такава ще те видя<br />
+ която и да  си<br />
+</p>
+
+<p>
+(sept chords 5)<br />
+ В любовта да се вживея не мога<br />
+да се  вживея в живота не мога<br />
+Не   мога, не мога, не мога<br />
+А  искам, а искам, а искам<br />
+</p>
+
+<p>
+(sept chords 5)<br />
+ Поглеждам те и ме обзема  страх -<br />
+ огромно е разтоянието между  нас<br />
+ По-бързо с мълчание ще стигна до  края<br />
+ отколкото с  думи до  теб<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2e3ff3e" class="outline-2">
+<h2 id="org2e3ff3e"><span class="section-number-2">58.</span> Само врагове</h2>
+<div class="outline-text-2" id="text-58">
+<p>
+(t:140 r:4/4)<br />
+</p>
+
+<p>
+Кажи ми "Сбогом!", нара  ни ме жестоко<br />
+избягай завинаги с  друг<br />
+но не искай да ос  танем само приятели<br />
+врагове остават само след  истинската любов<br />
+</p>
+
+<p>
+ Лъжи ме в очите, зад гър  ба ме предай<br />
+смърто  носна отрова в у  хото ми сипи<br />
+ но не искай да ос  танем само приятели<br />
+враго  ве остават само след  истинската любов<br />
+</p>
+
+<p>
+Сбогом и про  щавай<br />
+Нека си останем<br />
+само враго  ве<br />
+</p>
+
+<p>
+ За да бъдеш приятел е  нужна сила<br />
+ аз съм един  слаб човек<br />
+ за десет години не се  научих да не те обичам<br />
+враго  ве остават само след  истинската любов<br />
+</p>
+
+<p>
+ Лъжи ме в очите, зад гър  ба ме предай<br />
+смърто  носна отрова в у  хото ми сипи<br />
+ но не искай да ос  танем само приятели<br />
+враго  ве остават само след  истинската любов<br />
+</p>
+
+<p>
+Сбогом и про  щавай<br />
+Нека си останем<br />
+само враго  ве<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8b6d130" class="outline-2">
+<h2 id="org8b6d130"><span class="section-number-2">59.</span> Самотата ме ражда</h2>
+<div class="outline-text-2" id="text-59">
+<p>
+(r:110 t:4/4)<br />
+</p>
+
+<p>
+ Майко здравей,  това го  пиша за те  бе D]<br />
+седем  надесет пъти се  опитах да  бъда до  теб D]<br />
+Но  после по пътя  един от  нас се из  губи D]<br />
+и  белите призраци  още на бал  кона ви  сят D]<br />
+</p>
+
+<p>
+Ще се раз  дам, на пар  цали ще се хвърля<br />
+на  кучетата долу, на  всичките бездомници на  вън<br />
+ и аз знам, един  пламък на червено свети<br />
+и  скитниците днес са  пътищата на утрешния  град B] A G Gb Em]<br />
+</p>
+
+<p>
+ Майко недей,  повече  няма да  пиша D]<br />
+И ръж  дата в ставите, и ча  совника за  мръзнал на  "три"&#x2026; D]<br />
+Само  тата ме ражда в  гнездо на  куку  вица D]<br />
+Само  тата ме ражда, а само  майките  раждат, на  ли? D]<br />
+</p>
+
+<p>
+Ще се раз  дам, на пар  цали ще се хвърля<br />
+на  кучетата долу, на  всичките бездомници на  вън<br />
+ и аз знам, един  пламък на червено свети<br />
+и  скитниците днес са  пътищата на утрешния  град B] A G Gb Em]<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org16619d4" class="outline-2">
+<h2 id="org16619d4"><span class="section-number-2">60.</span> Семейство "Феерия"</h2>
+<div class="outline-text-2" id="text-60">
+<p>
+(t:130 r:4/4)<br />
+</p>
+
+<p>
+(разложени*)<br />
+</p>
+
+<p>
+ В "Феерия" всички са  добре дошли<br />
+и стари, и млади, и жени,  и жени<br />
+Семейството ви очаква с от  ворени обятия<br />
+ос  обено ако не сте някой, а  някоя<br />
+</p>
+
+<p>
+ Спортните уреди са на  право мечта<br />
+за сила, за гъвкавост и&#x2026; за  други неща<br />
+а ако сте от тия дето  тарам-ти-ри-ра<br />
+ на шведската стена няма  да сте сама<br />
+</p>
+
+<p>
+(разговорно) И-и-и-и-и-иии тренировката започва сега:<br />
+</p>
+
+<p>
+Пет по петдесет, но не  ракия<br />
+Четири по сто, но не в  чиния<br />
+Десет километра, но не с  влак<br />
+"Изоставаш!", казва мама  "Давай пак!"<br />
+</p>
+
+<p>
+Сядай, клякай, ставай, лягай<br />
+дъски, гръб, и клек, и тяга<br />
+после гири до припадък         x2<br />
+после всичко от начало<br />
+</p>
+
+<p>
+ А ако нещо те забо  ли, Стефи ще го благосло  ви<br />
+ А ако нещо ти се раз  мести, Машината ще го на  мести<br />
+ Ако тежки мисли пък те въл  нуват , Джак Ръсел ще те изле<br />
+                                                                 кува<br />
+ Но ако просто търсиш по  кой, от  Отец Йоан бягай и не питай<br />
+o                                                                 от кой<br />
+ Всички се страхуват от Йо  Ванския гняв,  освен може би един<br />
+                                                           малък жираф<br />
+</p>
+
+<p>
+(разговорно) Дами и господа, директно от Петрич, Калифорния,<br />
+специално за Фитнес "Феерия" &#x2013; Нобеловият лауреат Борис Дилянов:<br />
+</p>
+
+<p>
+ Колко пъ  теки трябва да из  бяга  човек<br />
+ преди Фери да му  каже да  спре<br />
+ И колко  цвекло трябва  да изя  де<br />
+ преди холестерола му  да бъде  в ред<br />
+ Отговора , приятелю, се  носи по  вятъра<br />
+там до Пет  те Кьошета в  пряката<br />
+ Отговора  приятелю се  носи по  вятъра<br />
+там до Пет  те Кьошета в  пряката<br />
+</p>
+
+<p>
+(разговорно) Благодарим, Боби! Благодарим!<br />
+И-и-и-и-ииии обратно в семейството&#x2026;<br />
+</p>
+
+<p>
+ Семейство Феерия е  винаги с теб<br />
+Е, или два-три пъти  седмично поне<br />
+Феерия значи Ферит и ако не  си разбрал<br />
+То  ва е състояние на духа, а  не метал<br />
+</p>
+
+<p>
+ Спортните уреди са на  право мечта<br />
+за сила, за гъвкавост и&#x2026; за  други неща<br />
+а ако сте от тия дето  тарам-ти-ри-ра<br />
+ на шведската стена няма  да сте сама<br />
+</p>
+
+<p>
+(разговорно) A-a-a-a-aaaa тренировката продължава сега:<br />
+</p>
+
+<p>
+Пет по петдесет, но не  ракия<br />
+Четири по сто, но не в  чиния<br />
+Десет километра, но не с  влак<br />
+"Изоставаш!", казва мама  "Давай пак!"<br />
+</p>
+
+<p>
+Сядай, клякай, ставай, лягай<br />
+дъски, гръб, и клек, и тяга<br />
+после гири до припадък         x4 (повтаря се все по-бързо)<br />
+после всичко от начало<br />
+</p>
+
+<p>
+20180509<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgd78ab6f" class="outline-2">
+<h2 id="orgd78ab6f"><span class="section-number-2">61.</span> Софийски герой</h2>
+<div class="outline-text-2" id="text-61">
+<p>
+(t:140 r:4/4)<br />
+</p>
+
+<p>
+(текст: по мотиви на Сандра Хофман)<br />
+</p>
+
+<p>
+Riff: G5 A5 G5]<br />
+</p>
+
+<p>
+ тя каза : 'животът<br />
+ не е по-хубав без<br />
+ тези не  ща A5 G5 | Em G5 A5 G5]<br />
+ просто е различен.'<br />
+ майната на всички<br />
+аз не  искам то  ва A5 G5 | Em G5 A5 G5]<br />
+</p>
+
+<p>
+ не искам да марширувам<br />
+по  улици<br />
+с кон  кретната  цел A5 G5 | Em G5 A5 G5]<br />
+не  искам работа,<br />
+се  мейство<br />
+и  ден подир  ден A5 G5 | Em G5 A5 G5]<br />
+</p>
+
+<p>
+ да се  боря с  черното в  мен A5 G5 | Em G5 A5 G5]<br />
+A5 G5 | Em G5 A5 G5]<br />
+A5 G5 | Em G5 A5 G5]<br />
+A5 G5 | Em G5 A5 G5]<br />
+</p>
+
+<p>
+ първия трамвай<br />
+в  пет сутринта не те прави<br />
+ по-малко  сам A5 G5 | Em G5 A5 G5]<br />
+ един бивш някога<br />
+ бил мърляв<br />
+со  фийски ге  рой A5 G5 | Em G5 A5 G5]<br />
+</p>
+
+<p>
+и  никой не ще помни<br />
+ твоята<br />
+е  пична бор  ба A5 G5 | Em G5 A5 G5]<br />
+  за случване на дните<br />
+ майната на всички<br />
+аз не  искам то  ва A5 G5 | Em G5 A5 G5]<br />
+</p>
+
+<p>
+ да се  боря с  черното в  мен A5 G5 | Em G5 A5 G5]<br />
+ да се  боря с  черното в  мен A5 G5 | Em G5 A5 G5]<br />
+A5 G5 | Em G5 A5 G5]<br />
+A5 G5 | Em G5 A5 G5]<br />
+</p>
+
+<p>
+20130422<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org49942b0" class="outline-2">
+<h2 id="org49942b0"><span class="section-number-2">62.</span> Спасение</h2>
+<div class="outline-text-2" id="text-62">
+<p>
+(t:110 r:4/4)<br />
+</p>
+
+<p>
+Помниш ли ко  гато<br />
+повярва че ще се спа  сиш<br />
+Когато протегна  момчешки ръце<br />
+времето да уловиш<br />
+</p>
+
+<p>
+Когато излезе от  себе си<br />
+и бос през реката  пое<br />
+За да прегърнеш на  другия бряг<br />
+призрака на своето спасение<br />
+</p>
+
+<p>
+ Когато понечил да се  върнеш назад<br />
+и ко  гато внезапно разбра<br />
+ че не можеш да влезеш  два пъти<br />
+в ед  на и съща река<br />
+</p>
+
+<p>
+ Но няма време за  губене<br />
+и да пе  челим не остана  какво<br />
+ Ако имаш две крила дай ед  ното на ближния<br />
+и поле  тете така в  едно<br />
+</p>
+
+<p>
+Am F | Am F | Am G | F F ]<br />
+</p>
+
+<p>
+Като сиви гълъби в  клетки<br />
+висим на дървото  "Живот"<br />
+и през премрежени  клепки<br />
+сънуваме как<br />
+</p>
+
+<p>
+в далечината шансът ни  маха<br />
+благосклонно ни кима с  глава<br />
+а на сутринта из  тръпнали разбираме<br />
+че друг самотен гълъб е бил това<br />
+</p>
+
+<p>
+ И тогава ни връхлита По  гнусата<br />
+и до  скъсване размахваме криле<br />
+ Искаме да полетим над  себе си<br />
+и върху  себе си пак падаме<br />
+</p>
+
+<p>
+ Но няма време за  губене<br />
+и да пе  челим не остана  какво<br />
+ Ако имаш две крила дай ед  ното на ближния<br />
+и поле  тете така в  едно<br />
+</p>
+
+<pre class="example">
+
+iii xxxxxx  iii xxxxxx
+    |||x||      |||x||
+    |x||||      |xx|||
+    ||||||      ||||||
+</pre>
+</div>
+</div>
+<div id="outline-container-org0f8daf2" class="outline-2">
+<h2 id="org0f8daf2"><span class="section-number-2">63.</span> Спомен</h2>
+<div class="outline-text-2" id="text-63">
+<p>
+(t:60 r:4/4)<br />
+</p>
+
+<p>
+ Пастелените цвето  ве на есента<br />
+ме  карат да се сещам за  теб<br />
+ Шума на лис  тата ми нашепва<br />
+ името ти когато тихо  стъпвам<br />
+</p>
+
+<p>
+по криволичещите пътеки  на време  то<br />
+Вземи очите ми и виж слепеца  който ти по  дава рака<br />
+Ако това е хайку  смисълът е между редо  вете<br />
+ако не е &#x2013;  той е в тиши  ната<br />
+</p>
+
+<p>
+ Зная какво  мислиш<br />
+И на  истина е много  смешно<br />
+ Най-смешно е това че бях по  вярвал<br />
+че ро  мантиката е в мо  торите сега<br />
+</p>
+
+<p>
+Колко думи са равни  на ед  но сърце?<br />
+Колко сърца правят  една  дума?<br />
+Колко ръце са нужни за да задър  жат една  надежда?<br />
+Това не е хайку и  смисълът е в тиши  ната<br />
+</p>
+
+<p>
+20091019<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgbea7aa5" class="outline-2">
+<h2 id="orgbea7aa5"><span class="section-number-2">64.</span> Страх от високо</h2>
+<div class="outline-text-2" id="text-64">
+<p>
+на Иван С.<br />
+</p>
+
+<p>
+(t:130 r:4/4)<br />
+</p>
+
+<p>
+Той беше  моя най-до  бър при  ятел -<br />
+седеше  до мене, на  третия  чин<br />
+Веднъж ме  попита: "Имаш ли  страх от ви  соко?"<br />
+Погледнах го  весело: "Това бе  песен  нали?"<br />
+</p>
+
+<p>
+Той беше  моя най-до  бър при  ятел<br />
+Седеше до  мене, на  третия  чин<br />
+Един ден ре  ши да пре  срещне стра  ха си<br />
+и третия  чин и до днес  празен  седи<br />
+</p>
+
+<p>
+Често сега те съ  нувам приятелю -<br />
+застинал в полет след  своите мечти<br />
+Дано поне там горе в'  високото някъде<br />
+си намерил това, което  тук не откри<br />
+</p>
+
+<p>
+Той беше  моя най-до  бър при  ятел<br />
+Седеше до  мене, на  третия  чин<br />
+Веднъж ме  попита: "Имаш ли  страх от ви  соко?"<br />
+и третия  чин и до днес  празен  седи<br />
+</p>
+
+<p>
+Често сега те съ  нувам приятелю -<br />
+застинал в полет след  своите мечти<br />
+Дано поне там горе в'  високото някъде<br />
+си намерил това, което  тук не откри<br />
+</p>
+
+<p>
+20091215<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ff89af" class="outline-2">
+<h2 id="org8ff89af"><span class="section-number-2">65.</span> Студено време</h2>
+<div class="outline-text-2" id="text-65">
+<p>
+(t:130 r:4/4)<br />
+</p>
+
+<p>
+Боли ме тялото, болят ме костите и зъбите<br />
+студена пот покрива тре  перещите ми ръце<br />
+и черепа ми е скован в железни клещи на умора<br />
+Навярно е от времето  навън<br />
+</p>
+
+<p>
+ Живеем в студено  време<br />
+и се от  далечаваме един от  друг<br />
+ като планети сред безкрайната  вселена<br />
+ затворили сърцата си под  ключ<br />
+</p>
+
+<p>
+зад стени от рационалност, страх, егоизъм, гордост, суета,<br />
+застраховка срещу риска от  живот<br />
+А душите ни прилежно на хербарий изсушени<br />
+между сметките от търга на  мечти<br />
+</p>
+
+<p>
+ Живеем в студено  време<br />
+и се от  далечаваме един от  друг<br />
+ като планети сред безкрайната  вселена<br />
+ затворили сърцата си под  ключ<br />
+</p>
+
+<p>
+с договори, данъци, проценти, лихви, заеми,<br />
+гаранции и плащане без  срок,<br />
+Боговете ни модерни нелепо се усмихват<br />
+от стените на храма ни  "Комфорт"<br />
+</p>
+
+<p>
+И студа на наш'то време ни  сковава<br />
+в абстиненция от липса на  живот<br />
+и сърцата ни се заду  шават<br />
+затворени на сигурно под  ключ<br />
+</p>
+
+<p>
+Боли ме тялото, болят ме костите и зъбите<br />
+студена пот покрива тре  перещите ми ръце<br />
+и черепа ми е скован в железни клещи на умора<br />
+Навярно е от времето  навън<br />
+</p>
+
+<p>
+ Живеем в студено  време<br />
+и се от  далечаваме един от  друг<br />
+ като планети сред безкрайната  вселена<br />
+ затворили сърцата си под  ключ<br />
+</p>
+
+<p>
+20120729<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orge95adc0" class="outline-2">
+<h2 id="orge95adc0"><span class="section-number-2">66.</span> Съдба</h2>
+<div class="outline-text-2" id="text-66">
+<p>
+(t:120 r:2/4)<br />
+</p>
+
+<p>
+ Любим се, изневеряваме и  лъжем<br />
+смеем се пред хората и  плачем насаме<br />
+ питаме в огледалото лика си  тъжен:<br />
+ "Виждали ли сме се някъде?  Къде?"<br />
+</p>
+
+<p>
+ Купуваме коли и мeбели и  дрехи -<br />
+стар нрав под нова козина  прикрит<br />
+ Над храма ни панелен, надпис  свети:<br />
+ "Важно е вълка да бъде  сит!"<br />
+</p>
+
+<p>
+ Протрити лакти, загрубели  чувства<br />
+изтръгнати сърца, надежда за нов  шанс<br />
+ Как да започна от началото щом  пусто<br />
+ къде започваше началото не  знам<br />
+</p>
+
+<p>
+ Като земя ний бяхме и ще  бъдем<br />
+в кръг въртим се век след  век<br />
+ Любим се, изневеряваме и  лъжем<br />
+ и носим своята съдба -  човек<br />
+</p>
+
+<p>
+ Животът ни - на Бог случайна  грешка<br />
+ако ме чува той  отгоре - нека  знай<br />
+ отровна е съдбата ни чо  вешка<br />
+ но аз ще пия от отровата  докрай<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org811b347" class="outline-2">
+<h2 id="org811b347"><span class="section-number-2">67.</span> Съревнование</h2>
+<div class="outline-text-2" id="text-67">
+<p>
+(t:125 r:4/4)<br />
+</p>
+
+<p>
+ Ако се съревноваваш с мене, нека ти  кажа:<br />
+ аз съм безкрайно скучен  опонент<br />
+Ще играя честно и ще се  боря<br />
+ с доблест, но ще се боря за  теб<br />
+</p>
+
+<p>
+ Лесно ще ти дам твой'та по  беда,<br />
+ а когато ликуваш ще ликувам с  теб<br />
+Една песен дели ни от сърцето на  другия:<br />
+ когато печелиш - печеля с  теб<br />
+</p>
+
+<p>
+ Когато един ден загубиш свой'та коро  на -<br />
+ всяка победа, знаеш, струва съл  зи -<br />
+тогава аз пак редом до теб ще ос  тана,<br />
+ от твоята болка и мене  боли<br />
+</p>
+
+<p>
+ Ако се съревноваваш с мене, нека ти  кажа:<br />
+ аз съм безкрайно скучен  опонент<br />
+Ще играя честно и ще се  боря<br />
+ с доблест, но ще се боря за  теб<br />
+</p>
+
+<p>
+20100115<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org9a85528" class="outline-2">
+<h2 id="org9a85528"><span class="section-number-2">68.</span> Сърце на града</h2>
+<div class="outline-text-2" id="text-68">
+<p>
+(t:65 r:2/4)<br />
+</p>
+
+<p>
+Все още те виждам -  сърце на Града<br />
+Разстлана по нощните улици,  разтворена в мрака<br />
+Заобиколена от хора,  вечно сама<br />
+Завинаги  сама<br />
+</p>
+
+<p>
+Понякога мисля че  усещанията ни са само илюзия<br />
+но друг път&#x2026;  съм сигурен в това<br />
+</p>
+
+<p>
+Ти ме  отнесе  там от  където<br />
+ никога не ще се  върна<br />
+Ти ме  отнесе  там откъдето<br />
+ никога не ще се  върна<br />
+Ти ме  отнесе<br />
+ там откъдето  никога (x3)<br />
+не ще се  върна-a-a  a-a-a<br />
+</p>
+
+<p>
+ Виждам и себе си -  в черната стая<br />
+ слегнал се с пода,  стенейки сам<br />
+ Роден от това  което ме убива<br />
+Завина  ги-и-и, завинаги  сам<br />
+</p>
+
+<p>
+Понякога искам  усещанията ни да са само илюзия<br />
+но друг път&#x2026; не съм  сигурен в това<br />
+</p>
+
+<p>
+Ти ме  отнесе  там от  където<br />
+ никога не ще се  върна<br />
+Ти ме  отнесе  там откъдето<br />
+ никога не ще се  върна<br />
+Ти ме  отнесе<br />
+ там откъдето  никога (x3)<br />
+не ще се  върна-a-a  a-a-a<br />
+</p>
+
+<pre class="example">
+CM7
+   ooo
+||||||
+||x|||
+|x||||
+</pre>
+
+<p>
+19971226<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb6d2dc9" class="outline-2">
+<h2 id="orgb6d2dc9"><span class="section-number-2">69.</span> Tам ли си още</h2>
+<div class="outline-text-2" id="text-69">
+<p>
+(t:65 r:2/4)<br />
+</p>
+
+<p>
+Ало, там ли си  още?<br />
+как изглеждаш сега? оста  рял?<br />
+Хаха, шегувам се, не те помня  вече<br />
+Изпрати снимки! Сънувах те  пak.<br />
+</p>
+
+<p>
+Помниш ли Витоша? Там  горе на върха,<br />
+когато мечтаехме  заедно.<br />
+Ти искаше да бъдеш богат, да  купиш надежда за всички<br />
+Аз исках да пътувам дa  лече, далече, далече<br />
+</p>
+
+<p>
+ Белият прах на  времето<br />
+по  сипва тихо ко  сите ни<br />
+ Думи като и  гли<br />
+про  низват въздуха без  мисленно<br />
+</p>
+
+<p>
+(куплет свирене с уста)<br />
+</p>
+
+<p>
+ Разпръснати като  стъклени перли<br />
+по  света. изгубени в  себе си<br />
+ Ало, там ли си  още?<br />
+ Ало, мечтаеш ли  още?<br />
+</p>
+
+<p>
+ Белият прах на  времето<br />
+по  сипва тихо ко  сите ни<br />
+ Думи като и  гли<br />
+про  низват въздуха без  мисленно<br />
+</p>
+
+<pre class="example">
+
+||||||   ||||||   ||||||   ||||||
+|xx|||   ||x|||   |||x||   ||x|||
+||||||   |x||||   ||||||   |x||||
+</pre>
+</div>
+</div>
+<div id="outline-container-org23431c5" class="outline-2">
+<h2 id="org23431c5"><span class="section-number-2">70.</span> Ти жумиш</h2>
+<div class="outline-text-2" id="text-70">
+<p>
+(t:200 r:4/4)<br />
+</p>
+
+<p>
+"Взе  ми би  лета  ми за  тържес  твото  Живот"<br />
+"Умо  рена съм  вече  и е  време  да вър  вя"<br />
+"Аз изгорях и да  тлея не искам", каза  тя A G]<br />
+</p>
+
+<p>
+А  помня  те със  златни  коси A G]<br />
+като  деца се  криех  ме от  есен  ните  сенки<br />
+"Ти жумиш",  каза тя и се  скри зад  Слънце  то A G]<br />
+</p>
+
+<p>
+Та  ка те  търся  и до  днес A G]<br />
+и не  зная  жумя ли  или  вече  осле  пях<br />
+"Ти жумиш", каза  тя и се  скри зад  Слънце  то A G]<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb2b5890" class="outline-2">
+<h2 id="orgb2b5890"><span class="section-number-2">71.</span> Трета класа</h2>
+<div class="outline-text-2" id="text-71">
+<p>
+(t:70 r:2/4)<br />
+</p>
+
+<p>
+(разложени)<br />
+ Ако пишеш закона - казват ти  цар<br />
+Ако го нарушаваш - ти си  господар<br />
+ а който играе с открити карти на  маса -<br />
+той е  трета класа, той е  трета класа<br />
+ а който играе с открити карти на  маса -<br />
+той е  трета класа, той е  трета класа<br />
+</p>
+
+<p>
+(цели)<br />
+ Години на преход казват, ново време - не  сън<br />
+едни строят барикади, други всичко изнасят на  вън<br />
+а  онзи старец на ъгъла с тъжна  гримаса -<br />
+той е  трета класа, той е  трета класа<br />
+а  онзи старец на ъгъла с тъжна  гримаса -<br />
+той е  трета класа, той е  трета класа<br />
+</p>
+
+<p>
+(разложени)<br />
+ Изплуваме бавно, мислим с ко  реми<br />
+празни глави и празни порт  фейли<br />
+ животът ни жълт е 24  часа,<br />
+ мечтите ни и те са  трета класа<br />
+ животът ни жълт е 24  часа,<br />
+ мечтите ни и те са  трета класа<br />
+</p>
+
+<p>
+(цели)<br />
+ Светът се отваря казваш и граници  няма<br />
+скоро всички ше бъдем една единна дър  жава<br />
+ една държава казвам, но с два  гласа -<br />
+ първа и трета, първа и трета  класа<br />
+ една държава казвам, но с два  гласа -<br />
+ първа и трета, първа и трета  класа<br />
+</p>
+
+<p>
+20091004<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org733af88" class="outline-2">
+<h2 id="org733af88"><span class="section-number-2">72.</span> Тъмната вълна</h2>
+<div class="outline-text-2" id="text-72">
+<p>
+(r:125 t:4/4)<br />
+</p>
+
+<p>
+(single string)<br />
+ Това сме ние, ко  ито ни свързва<br />
+ това че нищо с  вас не делим<br />
+ Не искаме късове от  вашето бъдеще<br />
+ парцали не щеме от  ваш'те съдби<br />
+</p>
+
+<p>
+(X5 chords)<br />
+ Хиляда пътеки, хи  ляда желания<br />
+умо  рени сме вече от  чужди мечти<br />
+ Ръка за ръка, от  тук и нататък<br />
+ това сме ние хиляда  нови вълни<br />
+</p>
+
+<p>
+Тъмната въл  на -  от тук и ната  тък<br />
+Тъмната вълна -  ще пъ  туваме до края  на нощта<br />
+</p>
+
+<p>
+(single string)<br />
+ Когато тази  цигара свърши<br />
+све  тът няма да е  както преди<br />
+ И когато тази ци  гара свърши<br />
+ще  вдишваме отново кисло  родния дим<br />
+</p>
+
+<p>
+(X5 chords)<br />
+ Недей да плачеш,  нима не разбираш<br />
+че та  къв е вкуса на кислород  ните дни<br />
+ Ръка за ръка,  от тук и нататък<br />
+ това сме ние хиляда  нови вълни<br />
+</p>
+
+<p>
+Тъмната въл  на -  от тук и ната  тък<br />
+Тъмната вълна -  ще пъ  туваме до края  на нощта<br />
+Тъмната въл  на -  от тук и ната  тък<br />
+Тъмната вълна -  пъте  шествие до края  на нощта<br />
+</p>
+
+<pre class="example">
+
+i ||||||   iii xxxxxx   ii xxxxxx     v xxxxxx
+  |xx|||       |||x||      ||||||       ||||||
+  ||||||       |xx|||      |xx|||       |xx|||
+  ||||||       ||||||      ||||||       ||||||
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgf81e75f" class="outline-2">
+<h2 id="orgf81e75f"><span class="section-number-2">73.</span> Хермина</h2>
+<div class="outline-text-2" id="text-73">
+<p>
+(t:140 r:4/4)<br />
+</p>
+
+<p>
+Riff: Em Em G A<br />
+</p>
+
+<p>
+Вените си щом не  мога да  уцеля<br />
+стрелата ще забия в  своето  сърце<br />
+С черна любов Купи  дон ме  ориса<br />
+и само смъртта  ще ни раз  дели<br />
+</p>
+
+<p>
+Riff: Em Em G A<br />
+</p>
+
+<p>
+Безмълвно когато се  любя с Хер  мина<br />
+в бяла тишина по  тъва све  та<br />
+Ръце като змии,  език като  жило<br />
+в убийствени ласки из  губвам се  аз<br />
+</p>
+
+<p>
+Хермина се казва  моето момиче<br />
+с Хермина започва и  свършва деня<br />
+Хермина - бяла  като кокиче<br />
+края на зимата за моята душа<br />
+</p>
+
+<p>
+Riff: Em Em G A<br />
+</p>
+
+<p>
+На свтабата ни само  двама ще  бъдем<br />
+бяла весталка и  черен же  них<br />
+последния среднощен  валс ще из  пълним<br />
+и само смъртта  ще ни разде  ли<br />
+</p>
+
+<p>
+ Хермина се казва  моето момиче<br />
+ с Хермина започва и  свършва нощта<br />
+ Хермина с венец от цве  тята на злото<br />
+моя  черна любов с бяла душа<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1e7ec1a" class="outline-2">
+<h2 id="org1e7ec1a"><span class="section-number-2">74.</span> Хероин</h2>
+<div class="outline-text-2" id="text-74">
+<p>
+(t:110 r:4/4)<br />
+</p>
+
+<p>
+(текст: Тома Марков)<br />
+</p>
+
+<p>
+хероин<br />
+хероин<br />
+капка дим<br />
+CASUAL  THREESOME<br />
+лидокаин<br />
+помпа на тишърт<br />
+кодеин<br />
+близък до  смисъл<br />
+</p>
+
+<p>
+викодин<br />
+дим<br />
+викодин<br />
+бензен  дрин<br />
+CASUAL THREESOME<br />
+амфетамин<br />
+деница вечерница<br />
+лъжица<br />
+бяга от  смисъл Gadd9 G5 Bm]<br />
+</p>
+
+<p>
+от са  мото начало<br />
+ ме лъжеш а после<br />
+на по  езията ми ти<br />
+ казваш лъ  жец<br />
+ има ли смисъл<br />
+да  имам обноски<br />
+ лъжица кристална<br />
+сприн  цовка чо  век<br />
+</p>
+
+<p>
+ как си къде си<br />
+благода  ря добре съм<br />
+ CASUAL THREESOME<br />
+ кета  мин<br />
+ има ли смисъл<br />
+ да се движат<br />
+ думите<br />
+  щом мъл  чим Gadd9 G5 Bm]<br />
+</p>
+
+<p>
+Solo:  Em G6 G Gadd9]<br />
+</p>
+
+<p>
+ как си къде си<br />
+благода  ря добре съм<br />
+ CASUAL THREESOME<br />
+ кета  мин<br />
+ има ли смисъл<br />
+ да се движат<br />
+ думите<br />
+ щом мъл  чим<br />
+</p>
+
+<p>
+(ниско)<br />
+ от самото начало<br />
+ме  лъжеш а после<br />
+ на поезията ми ти<br />
+ казваш лъ  жец<br />
+ има ли смисъл<br />
+да  имам обноски<br />
+ лъжица кристална<br />
+ спринцовка  чо  век Gadd9 G5 Bm]<br />
+</p>
+
+<pre class="example">
+Куплет:
+
+
+o  o        o  oo           o           o       o         
+||||||    v |xx|||    v xxx|||  iii x|||||  i ||||||
+|xx|||      ||||||      ||||||      ||||||    xx||||
+||||||      ||||||      ||||||      |xx|||    ||||||
+||||||      ||||||      ||||||      ||||||    ||||||
+
+Соло:
+
+
+||||||      ||||||    v |xx|||    v |xx|||    v xxx|||      
+|xx|||      |xx|||      ||||||      ||||||      ||||||      
+||||||      |||||x      ||||||      |||||x      |||||x      
+||||||      ||||||      ||||||      ||||||      ||||||      
+</pre>
+</div>
+</div>
+<div id="outline-container-orgb972851" class="outline-2">
+<h2 id="orgb972851"><span class="section-number-2">75.</span> Целуни ме сега</h2>
+<div class="outline-text-2" id="text-75">
+<p>
+(t:125 r:2/4)<br />
+</p>
+
+<p>
+Тя имаше дълга, права,  руса  коса<br />
+в нея се изгубвах като  удавник в  река<br />
+Очите й - два без  дънни,  сини водо  пада<br />
+теглеха мачтата на  кораба  ми към  ада<br />
+</p>
+
+<p>
+Приближих я небрежно и с отра  ботен фи  нес<br />
+предложих да излезем, да   пием ка  фе<br />
+Чаровно ми се у  смихна:  "Кафе, защо  не?<br />
+За мене - една  двойна  водка с  лед."<br />
+</p>
+
+<p>
+За философия говорихме в зади  мения  бар<br />
+Попитах я игириво аз като като  философ  стар:<br />
+"Харесваш ли френския екзистенциа  лизъм,  о мон а  мур?"<br />
+Тя ми отвърна:  "Не, готин, предпо  читам Епи  кур."<br />
+</p>
+
+<p>
+На кея уж случайно докоснах  ръката  й<br />
+Казах: "Силно се разбиват тази вечер  вълните,  нали?"<br />
+А тя се притисна към  мене и про  шепна в но  щта<br />
+"Силата е в ска  лите - целу  ни ме се  га!"<br />
+</p>
+
+<p>
+20100502<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org7482ccc" class="outline-2">
+<h2 id="org7482ccc"><span class="section-number-2">76.</span> Черен въглен</h2>
+<div class="outline-text-2" id="text-76">
+<p>
+(t:110 r:3/4)<br />
+</p>
+
+<p>
+Страх ме е да те взема,  китаро<br />
+От тялото ти зная ще рукне  кръвта<br />
+От струните ти зная ще покапят  сълзите<br />
+Ще ме убиваш зная с мой'та  тъгa<br />
+</p>
+
+<p>
+Страх ме е да те взема,  китаро<br />
+Вцепенен те гледам с празни  очи<br />
+Трелите ти зная ще разтопят къса  олово,<br />
+който тук от ляво така ми  тежи<br />
+</p>
+
+<p>
+(t:110 r:2/4)<br />
+</p>
+
+<p>
+Пр.   Опитваш се да бъдеш нещо, после  друго<br />
+      Питаш ме хубаво ли е да бъдеш  тъжен<br />
+      Може би да, ако има кой да те  целуне<br />
+      иначе тъгата те прави черен  въглен<br />
+                                      черен  въглен<br />
+</p>
+
+<p>
+Зная, че пак ще те взема,  китаро<br />
+И от струните ти пак ще покапят  сълзи<br />
+И зная ще разтопиш отново къса  олово<br />
+Сърцето е сърце, защото  боли<br />
+</p>
+
+<p>
+Пр.<br />
+</p>
+
+<pre class="example">
+Am*       Am*+    F*      F*+     D*      F*+
+||||||    ||||x|  ||||||  ||||x|  ||||||  ||||x|
+||xx||    ||xx||  |||x||  |||x||  |||x||  |||x||
+||||||    ||||||  ||x|||  ||x|||  ||x|x|  ||x|||
+</pre>
+
+<p>
+20100518<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgeedd126" class="outline-2">
+<h2 id="orgeedd126"><span class="section-number-2">77.</span> Черна стая с четири стени</h2>
+<div class="outline-text-2" id="text-77">
+<p>
+(t:120 r:4/4)<br />
+</p>
+
+<p>
+D5 E5 D5]<br />
+</p>
+
+<p>
+На седем  найсет &#x2013;  черна стая с  четири сте  ни<br />
+Понякога  искам отново да съм  там<br />
+и да не  намеря вратата за на  вън E5 D5]<br />
+</p>
+
+<p>
+На седем  найсет &#x2013;  черна стая с  четири сте  ни<br />
+Лекарствата &#x2013;  моята болест<br />
+Музиката &#x2013;  моето ле  карство E5 D5]<br />
+</p>
+
+<p>
+ На седем  найсет &#x2013;  сънувах едно настояще<br />
+ в което днес не  съм. Кой съну  ва<br />
+насто  ящето  в което   сме? E5 D5]<br />
+</p>
+
+<p>
+Събу  ди се!<br />
+Събу  ди се!<br />
+Събу  ди се!<br />
+</p>
+
+<pre class="example">
+
+vii xx||||   v xx||||   iii xx||||
+    ||||||     ||||||       ||||||
+    ||||||     ||||||       ||||||
+</pre>
+</div>
+</div>
+<div id="outline-container-org2eee9c5" class="outline-2">
+<h2 id="org2eee9c5"><span class="section-number-2">78.</span> Черен стих</h2>
+<div class="outline-text-2" id="text-78">
+<p>
+(r:120 t:4/4)<br />
+</p>
+
+<p>
+(разложени)<br />
+ Искам да плача с  каменни сълзи<br />
+ и когато падат не мен, а  пръстта да боли<br />
+ Но каменни очи само над  гробните статуи имат<br />
+ и от каменни очи падат само от  камък сълзи<br />
+</p>
+
+<p>
+Искам сърцето ми от  камък да бъде,<br />
+тъй че да не боли когато  лудо тупти<br />
+Но каменни сърца само над  гробните статуи имат -<br />
+от кръв е моето и с кървава  болка боли<br />
+</p>
+
+<p>
+(цели)<br />
+ Искам душата ми  бял лист да бъде,<br />
+ на който само думи  красиви стоят:<br />
+ Свобода. Надежда.  Вяра. Желание.<br />
+ Щастие. Смях. Лю  бов. Светлина.<br />
+</p>
+
+<p>
+Но на бели листа само  бели стихове пише,<br />
+а черен стих е  мой'та душа -<br />
+черен стих написан с  черно мастило,<br />
+което дяволски огън само  ще освети<br />
+</p>
+
+<p>
+(разложени)<br />
+ Затова ще плача с  кървави сълзи<br />
+ Затова като ранен вълк ще  вия в нощта,<br />
+ но ще направя ада  тесен за всичките дяволи<br />
+ преди човек в надгробна статуя да  преобразят<br />
+</p>
+
+<p>
+20100328<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org84cc12f" class="outline-2">
+<h2 id="org84cc12f"><span class="section-number-2">79.</span> Черна детелина</h2>
+<div class="outline-text-2" id="text-79">
+<p>
+(t:125 r:4/4)<br />
+</p>
+
+<p>
+ Черна дете  лина за мен откъс  ни<br />
+Глухо  тата на твоите уст  ни<br />
+ за  лива очите  ми<br />
+По  тъвам в тихия  мрак<br />
+</p>
+
+<p>
+ Мухи в  стъклен ков  чег<br />
+ вакуумът в нашите  вени<br />
+и зная че на  около са само сте  ни<br />
+за  трупан в черупки от думи<br />
+</p>
+
+<p>
+ Така, така умират  птиците<br />
+и дъж  дът е  техните съл  зи<br />
+А на  вън, по тези прашни  улици<br />
+остават  само, раз  пръснати ме  чти<br />
+</p>
+
+<p>
+ Черна дете  лина от теб ос  тана<br />
+в  три-четвърти пулсира кръв  та ми<br />
+Безмълвна  бе до сутрин  та<br />
+и то  гава се взрях в небето<br />
+</p>
+
+<p>
+ Така, така умират  птиците<br />
+и дъж  дът е  техните съл  зи<br />
+А на  вън, по тези прашни  улици<br />
+остават  само, раз  пръснати ме  чти<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga37dbef" class="outline-2">
+<h2 id="orga37dbef"><span class="section-number-2">80.</span> Dark Mistress</h2>
+<div class="outline-text-2" id="text-80">
+<p>
+ Right beside my head<br />
+I feel something black like hole or web<br />
+Time is running slow<br />
+Killing deadly all my future plans and roles<br />
+</p>
+
+<p>
+ The sea of snakes again<br />
+is writhing, turning, twisting, burning,<br />
+driving me insane<br />
+Oh, man<br />
+</p>
+
+<p>
+ Into the blackness I'm  back  again<br />
+ and the dark mistress is  here to stay with me  again<br />
+ Forever,  forever,  forever, with  me<br />
+my mistress is lovely and&#x2026;  dead<br />
+</p>
+
+<p>
+ I am down below<br />
+Encircled by the scars of my own soul<br />
+Drawning in between<br />
+not knowing what to choose - the pain or sin, I'm free<br />
+</p>
+
+<p>
+ Like mask of plasticine<br />
+my memories my eyes are covering<br />
+Trapped inside the past<br />
+the eighteen year old candle burned out fast, the last<br />
+</p>
+
+<p>
+ Into the blackness I'm  back  again<br />
+ and the dark mistress is  here to stay with me  again<br />
+ Forever,  forever,  forever, with  me<br />
+my mistress is lovely and&#x2026;  dead<br />
+</p>
+
+<p>
+1996<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orga578d7c" class="outline-2">
+<h2 id="orga578d7c"><span class="section-number-2">81.</span> Metaplatonic</h2>
+<div class="outline-text-2" id="text-81">
+<p>
+(t:63 r:4/4)<br />
+</p>
+
+<p>
+ We CAME together<br />
+ to SEparate<br />
+Our  souls KISSED<br />
+ To FLY away<br />
+</p>
+
+<p>
+ We found each other<br />
+To get  LOST again<br />
+We em  BRACED in one<br />
+To  SPLIT again /<br />
+</p>
+
+<p>
+CH   The wise men say<br />
+    in the pla  TONIC cave<br />
+    fire  WARMS up<br />
+    Souls  miles away /<br />
+</p>
+
+<p>
+Why  THEN  in my bed<br />
+is so  FREEzing cold?<br />
+Am I in the  WRONG place<br />
+or has  Plato been wrong? /<br />
+</p>
+
+<p>
+Am' C' Am']<br />
+</p>
+
+<p>
+ There's ONE thing I know<br />
+if i just  HOLD out my hand<br />
+if i tran  SCEND our existence<br />
+if i re  TURN back the sand<br />
+</p>
+
+<p>
+ the-hourGLASS will reverse<br />
+its un  STOPpable fall<br />
+I'll claim  BACK from the years<br />
+the one I  MISS most of all<br />
+</p>
+
+<p>
+16 April 2018<br />
+</p>
+
+<p>
+Am<sub>sus2</sub><br />
+</p>
+
+<pre class="example">
+Em        Am'       C'
+   ooo        oo       ooo
+||||||    ||||||    ||||||
+|xx|||    ||xx||    ||x|||
+||||||    ||||||    |x||||
+</pre>
+</div>
+</div>
+<div id="outline-container-org22322b2" class="outline-2">
+<h2 id="org22322b2"><span class="section-number-2">82.</span> No Use</h2>
+<div class="outline-text-2" id="text-82">
+<p>
+(t:130 r:4/4)<br />
+</p>
+
+<p>
+Riff: E E E E G E G E Gb Gb<br />
+</p>
+
+<p>
+ There's no  use in  dyeing<br />
+ Dyeing just  changes the  paint<br />
+ And the  dresses you're  wearing<br />
+Are  always the  same and  again and  again and  again<br />
+</p>
+
+<p>
+Don't care  if I  meet some  one<br />
+While I'm  roaming  through the  town<br />
+'cause when you  come to  think of  it<br />
+We'll all  meet  as we're  raw meat<br />
+</p>
+
+<p>
+Can't you see my blood is  flowing<br />
+It's dripping from my cut  veins<br />
+It's covering all of your  body<br />
+It's covering all of your  face   (all x2)<br />
+</p>
+
+<p>
+Maybe  I'll just  think a  beat<br />
+Or a bit of  something will  come to  me<br />
+Then I'll  sit down and  take a  sheet<br />
+And share with  you what's  inside of  me<br />
+</p>
+
+<p>
+Can't you see my blood is  flowing<br />
+It's dripping from my cut  veins<br />
+It's covering all of your  body<br />
+It's covering all of your  face   (all x2)<br />
+</p>
+
+<p>
+Riff: E E E E G E G E Gb Gb<br />
+c. 1998<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc60ac17" class="outline-2">
+<h2 id="orgc60ac17"><span class="section-number-2">83.</span> Standing on the Edge</h2>
+<div class="outline-text-2" id="text-83">
+<p>
+(t:120 r:5/4)<br />
+</p>
+
+<p>
+I was  standing on the  edge of the  time<br />
+I was  swaying, and  swaying, and  swaying<br />
+All my  memories were  falling  apart<br />
+fading  way, and  away, and  away<br />
+</p>
+
+<p>
+This is the  story of  losing my  mind<br />
+Mind you, it's  nothing ar  tis  tic<br />
+Help me for  get it if  you are my  friend<br />
+or why  don't you better just  kill me A G]<br />
+like you  anyway  would like you  anyway would G A G]<br />
+</p>
+
+<p>
+Mean  while i  painfully  learned<br />
+to  breath under  water  i needed  gills<br />
+Fishes  may  look somewhat  cold and  deaf<br />
+but they  never go  drowning and  drowning<br />
+</p>
+
+<p>
+This is the  story of inar  ticulate  thoughts<br />
+And it's  everything but ar  tis  tic<br />
+Tt is  coming from  deep down  below<br />
+where things are so  true that they  kill A G]<br />
+Yeah, they  really  kill  they really do G A G]<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org472f397" class="outline-2">
+<h2 id="org472f397"><span class="section-number-2">84.</span> The Only Way</h2>
+<div class="outline-text-2" id="text-84">
+<p>
+(Is with a Smile on Your Face)<br />
+(t:110 r:4/4)<br />
+</p>
+
+<p>
+Come with  grace to the place      (V1)<br />
+we'll make a  party in style<br />
+put on a  hat and a tie<br />
+and we'll  draw you a smile<br />
+And if you're  not in the mood yet<br />
+Close y'r  eyes and leave us to that<br />
+In just a  minute or two<br />
+you'll be a  mazed  what  we  do<br />
+</p>
+
+<p>
+You want the  hair of Bob Marley   (V1)<br />
+with the  bob hat of Charlie<br />
+a tongue stuck  out like a genius<br />
+and a  beard like the ZZ-ies<br />
+That's not a  problem for us<br />
+we shall  do what we must<br />
+to put a  smile on your face<br />
+is  the  on  ly  way<br />
+</p>
+
+<p>
+Or if the  face of Dave Beckham      (Ch)<br />
+is the fancy you  reckon<br />
+just  give us a clue<br />
+how you'd  like it to look<br />
+Is this  lipstick too red?<br />
+A tat  too on the neck?<br />
+Maybe a  Marilyn wig<br />
+will  do  the  full  trick<br />
+</p>
+
+<p>
+You know this  grim old world         (V1)<br />
+with all its  orders and rules<br />
+is a  drab dreadful place<br />
+without a  smiling fac e<br />
+success,  money and glitter<br />
+just  make you feel bitter<br />
+with no  emotion there's no reason<br />
+to live in this  in  hu  man  prison<br />
+</p>
+
+<p>
+Behind his  accounting book           (V2)<br />
+your boss has  such a dead look<br />
+doesn't even  nod at a joke<br />
+what a  boring bloke<br />
+What he  lacks is some mood<br />
+a new ex  pression or two<br />
+a naughty  smile and a wink<br />
+an invi  ta  tion  for  drink<br />
+</p>
+
+<p>
+So bring your  face to the place      (V1)<br />
+we'll make a  party in style<br />
+put on a  hat and a tie<br />
+and we'll  draw you a smile<br />
+And if you're  not in the mood yet<br />
+we remind you  not to forget<br />
+to live there is only  one way<br />
+it's with a  smile  on  your  face<br />
+</p>
+
+<pre class="example">
+Chords:
+
+V1:
+
+
+i ||||||  i ||||x|   iii xxxxxx  i ||||x|
+  |||x|x    |||x|x       |||x||    ||x|||
+  ||||x|    ||||||       |x||||    |x|x||
+
+
+
+i ||||||  i ||||x|   iii xxxxxx  ii |||||x  i |||||x  i ||||||    ||||||
+  |||x|x    |||x|x       |||x||     ||||||    ||||||    ||xxx|    |||x|x
+  ||||x|    ||||||       |x||||     ||xxx|    ||xxx|    ||||||    ||||x|
+
+Ch:
+
+
+iii |||||x  ii |||||x   i |||||x  i ||||||
+    ||||||     ||||||     ||||||    ||xxx|
+    ||xxx|     ||xxx|     ||xxx|    ||||||
+
+V2:
+
+
+i ||||x|  i ||||xx   i   ||||x|  iii xxxxxx
+  ||x|||    |||x||       |||x|x      |||x||
+  |x||||    ||x|||       ||||||      |x|||
+
+
+i ||||x|  i ||||xx   i   ||||x|   ii |||||x  i |||||x  i ||||||   i ||||||
+  ||x|||    |||x||       |||x|x      ||||||    ||||||    ||xxx|     |||x|x
+  |x||||    ||x|||       ||||||      ||xxx|    |||xxx    ||||||     ||||x|
+</pre>
+
+<p>
+20140327<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2fa986b" class="outline-2">
+<h2 id="org2fa986b"><span class="section-number-2">85.</span> Just Another Day</h2>
+<div class="outline-text-2" id="text-85">
+<p>
+(t:280 r:4/4)<br />
+</p>
+
+<p>
+Sitting in the hallway,  get my morning  fix<br />
+I don't give a f*ck about you,  you don't care about  me<br />
+Standing at the doorway,  the knife is in your  hand<br />
+The pool of blood just tells me  it's as good as it can  get<br />
+</p>
+
+<p>
+Rf.  It's just  another  day<br />
+     beginning  from the  end<br />
+     It's like  there's no  tomorrow<br />
+     and yesterday  i just can't  stand<br />
+</p>
+
+<p>
+I grabbed the pistol in my hand, I put it to my head<br />
+You started yelling like a psycho, me I only said:<br />
+"Your breast is full of tears, my head is full of sh*t<br />
+after all those f*cking years I feel it's time to quit!"<br />
+</p>
+
+<p>
+1997 г.<br />
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Неор Начев</p>
+<p class="date">Created: 2023-02-10 Fri 22:33</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
